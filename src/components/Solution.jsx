@@ -21,7 +21,7 @@ export default function Solution() {
             afterLabel: "Render",
             description: "Bản vẽ CAD thành ảnh thật",
             beforeImage: "/solutions/cad to photo before.jpg",
-            afterImage: "/solutions/cad to photo after.png"
+            afterImage: "/solutions/cad to photo after.jpg"
         },
         {
             title: "Revit, Sketchup, 3ds Max Model to Photo",
@@ -29,15 +29,15 @@ export default function Solution() {
             afterLabel: "Render",
             description: "Mô hình thành ảnh thật",
             beforeImage: "/solutions/revit 3d before.jpg",
-            afterImage: "/solutions/revit 3d after.png"
+            afterImage: "/solutions/revit 3d after.jpg"
         },
         {
             title: "3D Model to Photo",
             beforeLabel: "3D",
             afterLabel: "Render",
             description: "Khối 3D thô thành ảnh thật",
-            beforeImage: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80",
-            afterImage: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80"
+            beforeImage: "/solutions/plan to 3d before.png",
+            afterImage: "/solutions/plan to 3d after.png"
         },
         {
             title: "Multiple Views",
@@ -60,8 +60,8 @@ export default function Solution() {
             beforeLabel: "Raw",
             afterLabel: "Finished",
             description: "Hiện trạng thô thành hoàn thiện",
-            beforeImage: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80",
-            afterImage: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80"
+            beforeImage: "/solutions/site to finish before.jpg",
+            afterImage: "/solutions/site to finish after.jpg"
         },
         {
             title: "Restoration",
@@ -92,16 +92,16 @@ export default function Solution() {
             beforeLabel: "Standard",
             afterLabel: "Creative",
             description: "Sáng tạo góc máy mới",
-            beforeImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-            afterImage: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80"
+            beforeImage: "/solutions/doi goc cong trinh before.jpg",
+            afterImage: "/solutions/doi goc cong trinh after.jpg"
         },
         {
             title: "Shot Size",
             beforeLabel: "Wide",
             afterLabel: "Close-up",
             description: "Zoom cận cảnh",
-            beforeImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
-            afterImage: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80"
+            beforeImage: "/solutions/zoom can canh before.jpg",
+            afterImage: "/solutions/zoom can canh after.jpg"
         },
         {
             title: "Multiple Shot Sizes",
@@ -116,16 +116,16 @@ export default function Solution() {
             beforeLabel: "Static",
             afterLabel: "Alive",
             description: "Thêm người, vật vào ảnh",
-            beforeImage: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80",
-            afterImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
+            beforeImage: "/solutions/them nguoi vao anh before.png",
+            afterImage: "/solutions/them nguoi vao anh after.png"
         },
         {
             title: "Day to Night",
             beforeLabel: "Day",
             afterLabel: "Night",
             description: "Biến ngày thành đêm",
-            beforeImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-            afterImage: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80"
+            beforeImage: "/solutions/day to night before.png",
+            afterImage: "/solutions/day to night after.png"
         },
         {
             title: "Upscale & Enhance 4k",
