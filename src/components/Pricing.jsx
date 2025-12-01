@@ -30,7 +30,7 @@ export default function Pricing() {
         
         try {
             // Call API
-            const response = await fetch('https://n8n.bimspeed.net/webhook/6e64918e-525d-4abc-b7c8-3c77d24953ef', {
+            const response = await fetch('https://n8n.bimspeed.net/webhook/96f3480a-e078-4b76-813a-79f08caedafc', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
