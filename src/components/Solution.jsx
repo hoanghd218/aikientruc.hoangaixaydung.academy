@@ -328,14 +328,19 @@ export default function Solution() {
                                     </div>
 
                                     <div className="group bg-bg-surface rounded-2xl border-2 border-border hover:border-primary/60 transition-all hover:shadow-2xl overflow-hidden hover:-translate-y-2 duration-300 cursor-pointer">
-                                        {/* GIF/Video Preview */}
+                                        {/* YouTube Video Preview */}
                                         <div className="relative h-56 overflow-hidden bg-bg-muted">
-                                            <img
-                                                src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80"
-                                                alt="Video Timelapse Demo"
+                                            <iframe
+                                                width="100%"
+                                                height="100%"
+                                                src="https://www.youtube.com/embed/U2tVYMGdCdw"
+                                                title="Video Timelapse Demo"
+                                                frameBorder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowFullScreen
                                                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                                            />
-                                            <div className="absolute inset-0 bg-gradient-to-t from-text-main/80 via-text-main/20 to-transparent"></div>
+                                            ></iframe>
+                                            <div className="absolute inset-0 bg-gradient-to-t from-text-main/80 via-text-main/20 to-transparent pointer-events-none"></div>
                                             <div className="absolute top-4 left-4 px-3 py-1.5 bg-primary text-white text-xs font-bold rounded-lg shadow-lg flex items-center gap-1.5">
                                                 <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
                                                 VIDEO
