@@ -247,14 +247,14 @@ function CurriculumTestimonialsFree() {
                                         </div>
 
                                         {/* Project Image */}
-                                        <div className="relative h-56">
+                                        {/* <div className="relative h-56">
                                             <img
                                                 src={testimonial.image}
                                                 alt={`Dự án của ${testimonial.name}`}
                                                 className="w-full h-full object-cover"
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-t from-text-main/30 to-transparent"></div>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             ))}

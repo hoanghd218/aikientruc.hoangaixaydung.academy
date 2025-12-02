@@ -92,43 +92,47 @@ function ProcessComparisonFree() {
 }
 
 export function FeaturesFree() {
-    const painPoints = [
-        {
-            title: "Sợ mất việc",
-            description: "AI đang thay đổi ngành kiến trúc. Những ai không biết dùng AI sẽ bị thay thế bởi những người biết.",
-            image: "/fear-job-loss.png",
-            icon: <User className="h-6 w-6" />
-        },
-        {
-            title: "Sợ mất khách",
-            description: "Khách hàng đang chọn những kiến trúc sư có thể đưa ra phương án nhanh hơn, nhiều hơn. Bạn có đang thua cuộc?",
-            image: "/fear-customer-loss.png",
-            icon: <User className="h-6 w-6" />
-        },
-        {
-            title: "Sợ tụt hậu",
-            description: "Đồng nghiệp đã sử dụng AI và làm việc nhanh gấp 10 lần. Còn bạn thì vẫn đang render xuyên đêm.",
-            image: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-            icon: <Award className="h-6 w-6" />
-        }
-    ];
-
     return (
         <section id="features" className="py-16 md:py-24 border-b border-border bg-bg-main">
             <div className="container mx-auto px-4 md:px-6">
                 <FeaturesHeaderFree />
 
-                {/* Pain Points - Large Cards */}
-                <div className="grid md:grid-cols-3 gap-6 mb-12">
-                    {painPoints.map((point, index) => (
-                        <PainPointCardFree
-                            key={index}
-                            title={point.title}
-                            description={point.description}
-                            image={point.image}
-                            icon={point.icon}
-                        />
-                    ))}
+                {/* Pain Points - Narrative Style */}
+                <div className="max-w-4xl mx-auto mb-12">
+                    <div className="prose prose-lg max-w-none">
+                        {/* Pain Point 1 */}
+                        <div className="mb-8 p-8 rounded-xl bg-gradient-to-br from-primary/5 to-bg-surface border border-primary/20">
+                            <h3 className="text-2xl font-bold text-text-main mb-4 font-heading flex items-center gap-3">
+                                <User className="h-6 w-6 text-primary" />
+                                Sợ mất việc
+                            </h3>
+                            <p className="text-lg text-text-muted leading-relaxed font-sans">
+                                AI đang thay đổi ngành kiến trúc. Những ai không biết dùng AI sẽ bị thay thế bởi những người biết.
+                            </p>
+                        </div>
+
+                        {/* Pain Point 2 */}
+                        <div className="mb-8 p-8 rounded-xl bg-gradient-to-br from-primary/5 to-bg-surface border border-primary/20">
+                            <h3 className="text-2xl font-bold text-text-main mb-4 font-heading flex items-center gap-3">
+                                <User className="h-6 w-6 text-primary" />
+                                Sợ mất khách
+                            </h3>
+                            <p className="text-lg text-text-muted leading-relaxed font-sans">
+                                Khách hàng đang chọn những kiến trúc sư có thể đưa ra phương án nhanh hơn, nhiều hơn. Bạn có đang thua cuộc?
+                            </p>
+                        </div>
+
+                        {/* Pain Point 3 */}
+                        <div className="mb-8 p-8 rounded-xl bg-gradient-to-br from-primary/5 to-bg-surface border border-primary/20">
+                            <h3 className="text-2xl font-bold text-text-main mb-4 font-heading flex items-center gap-3">
+                                <Award className="h-6 w-6 text-primary" />
+                                Sợ tụt hậu
+                            </h3>
+                            <p className="text-lg text-text-muted leading-relaxed font-sans">
+                                Đồng nghiệp đã sử dụng AI và làm việc nhanh gấp 10 lần. Còn bạn thì vẫn đang render xuyên đêm.
+                            </p>
+                        </div>
+                    </div>
                 </div>
 
                 {/* Bottom Comparison */}
