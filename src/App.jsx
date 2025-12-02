@@ -8,7 +8,7 @@ import ThankYouFreePage from './pages/ThankYouFreePage';
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<FreeCourse2SessionPage />} />
+      <Route path="/" element={<HomePage />} />
       <Route path="/mua-khoa-hoc-ai-kientruc" element={<PaymentPage />} />
       <Route path="/ai-kien-truc-2-buoi-free" element={<FreeCourse2SessionPage />} />
       <Route path="/cam-on-dang-ky-khoa-free" element={<ThankYouFreePage />} />
