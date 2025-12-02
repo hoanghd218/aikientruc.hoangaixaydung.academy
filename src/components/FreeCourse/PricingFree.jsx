@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Check, Sparkles, Clock, Users, BookOpen, Video, Gift, Smartphone, MapPin, Headphones, Heart, User, Mail, Phone } from 'lucide-react';
+import ReactPixel from 'react-facebook-pixel';
+
 
 export default function PricingFree() {
     const navigate = useNavigate();
@@ -48,10 +50,7 @@ export default function PricingFree() {
                 throw new Error('Đăng ký thất bại');
             }
 
-            // Track Facebook Pixel event
-            if (window.fbq) {
-                window.fbq('track', 'Đăng ký');
-            }
+            ReactPixel.track('Đăng ký', formData);
 
             // Redirect to thank you page
             navigate('/cam-on-dang-ky-khoa-free');

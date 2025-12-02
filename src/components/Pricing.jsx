@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Check, Sparkles, Clock, Users, BookOpen, Video, Gift, Smartphone, MapPin, Headphones, Heart, User, Mail, Phone } from 'lucide-react';
+import ReactPixel from 'react-facebook-pixel';
 
 export default function Pricing() {
     const navigate = useNavigate();
@@ -47,14 +48,7 @@ export default function Pricing() {
                 throw new Error('Đăng ký thất bại');
             }
 
-            // Track Facebook Pixel event
-            console.log("window.fbq",window.fbq)
-            if (window.fbq) {
-
-                window.fbq('track', 'Đăng ký');
-
-                console.log("đăng ký")
-            }
+            ReactPixel.track('Đăng ký', formData);
 
             // Navigate to payment page on success
             navigate('/mua-khoa-hoc-ai-kientruc', { state: formData });
