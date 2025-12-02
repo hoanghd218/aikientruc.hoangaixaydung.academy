@@ -50,7 +50,10 @@ export default function Pricing() {
             // Track Facebook Pixel event
             console.log("window.fbq",window.fbq)
             if (window.fbq) {
+
                 window.fbq('track', 'Đăng ký');
+
+                console.log("đăng ký")
             }
 
             // Navigate to payment page on success
