@@ -60,22 +60,22 @@ export default function PricingFree() {
 
     const benefits = [
         {
-            icon: <Video className="h-5 w-5" />,
+            icon: <Video className="h-4 w-4" />,
             title: "Module 1: Render ảnh ngoại thất",
             highlight: true
         },
         {
-            icon: <Video className="h-5 w-5" />,
+            icon: <Video className="h-4 w-4" />,
             title: "Module 2: Render ảnh nội thất",
             highlight: true
         },
         {
-            icon: <Sparkles className="h-5 w-5" />,
+            icon: <Sparkles className="h-4 w-4" />,
             title: "Bộ Prompt AI chuyên dụng cho 2 module",
             highlight: true
         },
         {
-            icon: <BookOpen className="h-5 w-5" />,
+            icon: <BookOpen className="h-4 w-4" />,
             title: "Tài liệu hướng dẫn chi tiết, template, prompts, APP FREE"
         },
     ];
@@ -135,34 +135,34 @@ export default function PricingFree() {
                             </div>
 
                             {/* Benefits List */}
-                            <div className="space-y-4 mb-10">
-                                <h4 className="text-lg font-bold text-text-main font-heading mb-4 flex items-center gap-2">
-                                    <Gift className="h-5 w-5 text-primary" />
+                            <div className="space-y-2 mb-8">
+                                <h4 className="text-base font-bold text-text-main font-heading mb-3 flex items-center gap-2">
+                                    <Gift className="h-4 w-4 text-primary" />
                                     Bạn sẽ làm được ngay:
                                 </h4>
                                 {benefits.map((item, i) => (
                                     <div
                                         key={i}
-                                        className={`flex items-start gap-4 p-4 rounded-xl transition-all relative ${item.highlight
+                                        className={`flex items-center gap-3 p-2.5 rounded-lg transition-all relative ${item.highlight
                                                 ? 'bg-primary/5 border border-primary/20'
                                                 : 'bg-bg-muted/50 border border-border'
                                             }`}
                                     >
-                                        <div className={`mt-0.5 rounded-lg p-2 ${item.highlight
+                                        <div className={`rounded-md p-1.5 ${item.highlight
                                                 ? 'bg-primary/15 text-primary'
                                                 : 'bg-secondary/15 text-secondary'
                                             }`}>
                                             {item.icon}
                                         </div>
                                         <div className="flex-1">
-                                            <span className={`font-sans ${item.highlight
+                                            <span className={`text-sm font-sans ${item.highlight
                                                     ? 'font-bold text-text-main'
                                                     : 'font-medium text-text-main'
                                                 }`}>
                                                 {item.title}
                                             </span>
                                         </div>
-                                        <Check className={`h-5 w-5 flex-shrink-0 ${item.highlight ? 'text-primary' : 'text-secondary'
+                                        <Check className={`h-4 w-4 shrink-0 ${item.highlight ? 'text-primary' : 'text-secondary'
                                             }`} />
                                     </div>
                                 ))}
