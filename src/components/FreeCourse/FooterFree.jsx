@@ -36,10 +36,6 @@ export default function FooterFree() {
                         </ul>
                     </div>
                 </div>
-
-                <div className="pt-8 border-t border-secondary/30 text-center text-sm text-secondary font-sans">
-                    <p>&copy; {new Date().getFullYear()} Bimspeed AI. All rights reserved.</p>
-                </div>
             </div>
         </footer>
     );
