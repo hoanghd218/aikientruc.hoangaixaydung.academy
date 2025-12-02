@@ -47,6 +47,12 @@ export default function Pricing() {
                 throw new Error('Đăng ký thất bại');
             }
 
+            // Track Facebook Pixel event
+            console.log("window.fbq",window.fbq)
+            if (window.fbq) {
+                window.fbq('track', 'Đăng ký');
+            }
+
             // Navigate to payment page on success
             navigate('/mua-khoa-hoc-ai-kientruc', { state: formData });
         } catch (error) {

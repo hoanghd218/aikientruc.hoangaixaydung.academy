@@ -48,6 +48,11 @@ export default function PricingFree() {
                 throw new Error('Đăng ký thất bại');
             }
 
+            // Track Facebook Pixel event
+            if (window.fbq) {
+                window.fbq('track', 'Đăng ký');
+            }
+
             // Redirect to thank you page
             navigate('/cam-on-dang-ky-khoa-free');
         } catch (error) {
