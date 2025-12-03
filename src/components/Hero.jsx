@@ -34,20 +34,20 @@ export default function Hero() {
                         <div className="space-y-6">
                             <div className="inline-flex items-center rounded-full border-2 border-primary/30 bg-gradient-to-r from-primary/10 to-accent/10 px-4 py-2 text-sm font-bold text-primary font-sans shadow-lg backdrop-blur-sm">
                                 <span className="flex h-2.5 w-2.5 rounded-full bg-primary mr-2 animate-pulse"></span>
-                                🚀 Kỷ nguyên AI tới rồi bạn à
+                                🚀 Trở thành Master AI Kiến Trúc Nội Thất
                             </div>
                             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl xl:text-6xl/tight font-heading text-text-main leading-tight">
-                                Đừng để{' '}
+                                Thành thạo kỹ năng{' '}
                                 <span className="relative inline-block">
-                                    <span className="relative z-10 text-red-600">mất việc</span>
-                                    <span className="absolute bottom-1 left-0 right-0 h-3 bg-red-600/20 -rotate-1"></span>
+                                    <span className="relative z-10 text-primary">AI Kiến Trúc Nội Thất</span>
+                                    <span className="absolute bottom-1 left-0 right-0 h-3 bg-primary/20 -rotate-1"></span>
                                 </span>{' '}
-                                rồi mới đi học AI
+                                quan trọng nhất trong năm 2026
                             </h1>
                             <p className="max-w-[600px] text-text-main md:text-xl font-sans leading-relaxed">
-                                Tôi đã thấy có rất nhiều nhân viên, doanh nghiệp{' '}
-                                <span className="font-bold text-red-600">mất việc, mất khách hàng</span>{' '}
-                                chỉ vì đối thủ giỏi AI hơn bạn. Hành động ngay trước khi quá muộn!
+                                Dù bạn chưa biết gì về AI hay làm kiến trúc nội thất cũng đều có thể làm và{' '}
+                                <span className="font-bold text-primary">tạo ra các bản vẽ, render, visualization chuyên nghiệp</span>{' '}
+                                ngay sau 1 tuần học
                             </p>
                         </div>
 
@@ -74,14 +74,14 @@ export default function Hero() {
                                 <div className="flex-shrink-0 w-6 h-6 rounded-full bg-primary/15 flex items-center justify-center">
                                     <CheckCircle2 className="h-4 w-4 text-primary" />
                                 </div>
-                                <span className="font-medium">Học trực tiếp cùng <span className="font-bold text-primary">chuyên gia Tony Hoang, cùng sự hỗ trợ của các trợ lý</span></span>
+                                <span className="font-medium">Mỗi ngày 1 tiếng trở thành <span className="font-bold text-primary">Master AI Kiến Trúc Nội Thất trong 5 ngày</span></span>
                             </div>
-                            {/* <div className="flex items-center gap-3">
+                            <div className="flex items-center gap-3">
                                 <div className="flex-shrink-0 w-6 h-6 rounded-full bg-accent/15 flex items-center justify-center">
                                     <CheckCircle2 className="h-4 w-4 text-accent" />
                                 </div>
-                                <span className="font-medium">💯 <span className="font-bold text-accent">Cam kết hoàn tiền</span> nếu không hài lòng</span>
-                            </div> */}
+                                <span className="font-medium">Học trực tiếp cùng <span className="font-bold text-accent">chuyên gia Tony Hoang, cùng sự hỗ trợ của các trợ lý</span></span>
+                            </div>
                         </div>
                     </div>
 
