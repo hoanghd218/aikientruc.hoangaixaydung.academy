@@ -26,6 +26,11 @@ const slides = [
 ];
 
 export default function Hero() {
+    const handleScrollToPricing = () => {
+        const pricingSection = document.getElementById('pricing');
+        pricingSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+
     return (
         <section className="relative overflow-hidden border-b border-border bg-bg-surface py-12 md:py-24 lg:py-32">
             <div className="container mx-auto px-4 md:px-6">
@@ -52,10 +57,7 @@ export default function Hero() {
 
                         <div className="flex flex-col gap-4 min-[400px]:flex-row">
                             <button
-                                onClick={() => {
-                                    const pricingSection = document.getElementById('pricing');
-                                    pricingSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                                }}
+                                onClick={handleScrollToPricing}
                                 className="group inline-flex h-14 items-center justify-center rounded-xl bg-gradient-to-r from-primary to-accent px-8 text-base font-bold text-white shadow-xl shadow-primary/40 transition-all hover:shadow-2xl hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary font-sans relative overflow-hidden"
                             >
                                 <span className="relative z-10 flex items-center gap-2">
@@ -92,6 +94,17 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
+
+            {/* Floating Button for Mobile */}
+            <button
+                onClick={handleScrollToPricing}
+                className="md:hidden fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50 group inline-flex h-14 items-center justify-center rounded-xl bg-gradient-to-r from-primary to-accent px-8 text-base font-bold text-white shadow-2xl shadow-primary/50 transition-all hover:shadow-3xl hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary font-sans overflow-hidden"
+            >
+                <span className="relative z-10 flex items-center gap-2">
+                    Đăng ký ngay <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-accent to-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </button>
         </section>
     );
 }
