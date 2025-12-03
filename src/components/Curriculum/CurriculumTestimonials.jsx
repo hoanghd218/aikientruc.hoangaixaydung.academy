@@ -13,7 +13,6 @@ export function CurriculumTestimonials() {
             role: "Kiến trúc sư",
             rating: 5,
             text: "Em thật sự biết ơn @hoc vien đã tận tình chỉ dẫn trong suốt quá trình học. Nhờ @hoc vien, em đã thay đổi hoàn toàn cách tiếp cận công việc, từ nỗi khó khăn lên đến tự tưởng giải quyết vấn đề. Cảm ơn @hoc vien rất nhiều đã truyền cảm hứng và động lực cho em!",
-            image: "/hoc vien/nguyen van hung.png",
             verified: true
         },
         {
@@ -24,7 +23,6 @@ export function CurriculumTestimonials() {
             role: "Nhà Thiết Kế Nội Thất",
             rating: 5,
             text: "Cảm ơn @hoc vien đã chia sẻ những kiến thức quý giá về AI trong thiết kế. Nhờ @hoc vien, em đã mở mang tầm mắt và có thể áp dụng được vào công việc thực tế. Em rất trân trọng sự tận tâm và nhiệt tình của @hoc vien trong từng buổi học.",
-            image: "/hoc vien/tran thi binh.png",
             verified: true
         },
         {
@@ -35,7 +33,6 @@ export function CurriculumTestimonials() {
             role: "Quản Lý Dự Án Xây Dựng",
             rating: 5,
             text: "Em cảm ơn @hoc vien đã giúp em hiểu rõ hơn về tiềm năng của AI trong quản lý dự án. Những kiến thức @hoc vien chia sẻ rất thực tế và dễ áp dụng, giúp team em tiết kiệm được nhiều thời gian và chi phí. Thật sự biết ơn @hoc vien!",
-            image: "/hoc vien/le quang cuong.png",
             verified: true
         }
     ];
@@ -209,15 +206,7 @@ export function CurriculumTestimonials() {
                                             </div>
                                         </div>
 
-                                        {/* Project Image */}
-                                        <div className="relative h-56">
-                                            <img
-                                                src={testimonial.image}
-                                                alt={`Dự án của ${testimonial.name}`}
-                                                className="w-full h-full object-cover"
-                                            />
-                                            <div className="absolute inset-0 bg-gradient-to-t from-text-main/30 to-transparent"></div>
-                                        </div>
+                             
                                     </div>
                                 </div>
                             ))}

@@ -1,7 +1,35 @@
 import React from 'react';
 import { InstructorStats } from './InstructorStats';
+import { Facebook, Youtube, Linkedin, Music } from 'lucide-react';
 
 export function InstructorContent() {
+    const socialLinks = [
+        {
+            name: 'Facebook',
+            icon: Facebook,
+            url: 'https://www.facebook.com/hoanghd218/',
+            color: 'hover:text-blue-600'
+        },
+        {
+            name: 'TikTok',
+            icon: Music,
+            url: 'https://www.tiktok.com/@tran_hoang_ai_xay_dung',
+            color: 'hover:text-black'
+        },
+        {
+            name: 'LinkedIn',
+            icon: Linkedin,
+            url: 'https://www.linkedin.com/in/hoanghd218/',
+            color: 'hover:text-blue-700'
+        },
+        {
+            name: 'YouTube',
+            icon: Youtube,
+            url: 'https://www.youtube.com/@tony-hoang-ai-automation',
+            color: 'hover:text-red-600'
+        }
+    ];
+
     return (
         <div className="w-full lg:w-3/5">
             {/* Name & Title */}
@@ -9,12 +37,29 @@ export function InstructorContent() {
                 <h3 className="text-4xl md:text-5xl font-bold font-heading mb-3 text-text-main">
                     Tony Hoang
                 </h3>
-                <div className="flex items-center gap-3 mb-6">
+                <div className="flex items-center gap-3 mb-4">
                     <div className="h-1 w-12 bg-gradient-to-r from-primary to-accent rounded-full"></div>
                     <p className="text-xl text-text-main font-heading">Founder BimSpeed</p>
                 </div>
+                {/* Social Media Links */}
+                <div className="flex items-center gap-4">
+                    {socialLinks.map((social) => {
+                        const Icon = social.icon;
+                        return (
+                            <a
+                                key={social.name}
+                                href={social.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={`flex items-center justify-center w-10 h-10 rounded-lg bg-bg-surface border border-border text-text-muted transition-all duration-300 hover:border-primary hover:shadow-lg hover:-translate-y-1 ${social.color}`}
+                                aria-label={social.name}
+                            >
+                                <Icon className="h-5 w-5" />
+                            </a>
+                        );
+                    })}
+                </div>
             </div>
-
             {/* Description */}
             <div className="space-y-5 text-text-muted font-sans leading-relaxed mb-10">
                 <p className="text-lg">
