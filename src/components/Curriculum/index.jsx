@@ -4,6 +4,13 @@ import { CurriculumTestimonials } from './CurriculumTestimonials';
 import { Sparkles, Video, Clock, Award } from 'lucide-react';
 
 export function Curriculum() {
+    const handleScrollToPricing = () => {
+        const pricingSection = document.getElementById('pricing');
+        if (pricingSection) {
+            pricingSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    };
+
     const modules = [
         {
             title: "Module 1: Render ảnh ngoại thất",
@@ -123,7 +130,10 @@ export function Curriculum() {
                             <p className="text-text-main font-sans text-lg mb-4">
                                 <span className="font-bold text-primary">Kiến thức thực chiến</span>, áp dụng được ngay vào công việc 💼
                             </p>
-                            <button className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-bold rounded-lg hover:bg-primary/90 transition-all hover:shadow-lg hover:-translate-y-0.5">
+                            <button 
+                                onClick={handleScrollToPricing}
+                                className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-bold rounded-lg hover:bg-primary/90 transition-all hover:shadow-lg hover:-translate-y-0.5"
+                            >
                                 <Sparkles className="h-5 w-5" />
                                 Đăng ký ngay
                             </button>

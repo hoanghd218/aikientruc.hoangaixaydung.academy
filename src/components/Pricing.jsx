@@ -114,7 +114,7 @@ export default function Pricing() {
                     </p>
                 </div>
 
-                <div className="max-w-2xl mx-auto">
+                <div className="max-w-6xl mx-auto">
                     <div className="relative">
                         {/* Decorative background blur */}
                         <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 rounded-3xl blur-xl opacity-50"></div>
@@ -152,144 +152,147 @@ export default function Pricing() {
                                 </div>
                             </div>
 
-                            {/* Benefits List */}
-                            <div className="space-y-4 mb-10">
-                                <h4 className="text-lg font-bold text-text-main font-heading mb-4 flex items-center gap-2">
-                                    <Gift className="h-5 w-5 text-primary" />
-                                    Bạn sẽ nhận được:
-                                </h4>
-                                {benefits.map((item, i) => (
-                                    <div 
-                                        key={i} 
-                                        className={`flex items-start gap-4 p-4 rounded-xl transition-all relative ${
-                                            item.highlight 
-                                                ? 'bg-primary/5 border border-primary/20' 
-                                                : 'bg-bg-muted/50 border border-border'
-                                        }`}
-                                    >
-                                        {item.badge && (
-                                            <div className="absolute -top-2 -right-2 bg-gradient-to-r from-accent to-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg animate-pulse">
-                                                {item.badge}
+                            {/* Two Column Layout */}
+                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+                                {/* Left Column - Benefits */}
+                                <div className="space-y-4">
+                                    <h4 className="text-lg font-bold text-text-main font-heading flex items-center gap-2">
+                                        <Gift className="h-5 w-5 text-primary" />
+                                        Bạn sẽ nhận được:
+                                    </h4>
+                                    
+                                    {/* Benefits List - Compact */}
+                                    <div className="space-y-2.5">
+                                        {benefits.map((item, i) => (
+                                            <div 
+                                                key={i} 
+                                                className="flex items-start gap-3 relative"
+                                            >
+                                                <div className={`mt-0.5 ${
+                                                    item.highlight ? 'text-primary' : 'text-secondary'
+                                                }`}>
+                                                    {item.icon}
+                                                </div>
+                                                <div className="flex-1 flex items-center gap-2 flex-wrap">
+                                                    <span className={`font-sans text-sm ${
+                                                        item.highlight 
+                                                            ? 'font-bold text-text-main' 
+                                                            : 'font-medium text-text-main'
+                                                    }`}>
+                                                        {item.title}
+                                                    </span>
+                                                    {item.badge && (
+                                                        <span className="bg-gradient-to-r from-accent to-primary text-white text-xs font-bold px-2 py-0.5 rounded-full">
+                                                            {item.badge}
+                                                        </span>
+                                                    )}
+                                                </div>
+                                                <Check className={`h-4 w-4 shrink-0 mt-0.5 ${
+                                                    item.highlight ? 'text-primary' : 'text-secondary'
+                                                }`} />
                                             </div>
-                                        )}
-                                        <div className={`mt-0.5 rounded-lg p-2 ${
-                                            item.highlight 
-                                                ? 'bg-primary/15 text-primary' 
-                                                : 'bg-secondary/15 text-secondary'
-                                        }`}>
-                                            {item.icon}
-                                        </div>
-                                        <div className="flex-1">
-                                            <span className={`font-sans ${
-                                                item.highlight 
-                                                    ? 'font-bold text-text-main' 
-                                                    : 'font-medium text-text-main'
-                                            }`}>
-                                                {item.title}
-                                            </span>
-                                        </div>
-                                        <Check className={`h-5 w-5 flex-shrink-0 ${
-                                            item.highlight ? 'text-primary' : 'text-secondary'
-                                        }`} />
+                                        ))}
                                     </div>
-                                ))}
-                            </div>
 
-                            {/* Support Promise */}
-                            <div className="mb-6 p-6 bg-gradient-to-br from-accent/10 via-primary/5 to-accent/10 border-2 border-accent/30 rounded-xl">
-                                <div className="flex items-start gap-3 mb-4">
-                                    <Heart className="h-6 w-6 text-accent flex-shrink-0 mt-1" />
-                                    <div>
-                                        <h5 className="font-bold text-text-main font-heading mb-2 text-lg">
-                                            BimSpeed Cam Kết Hỗ Trợ Tận Tâm với bạn đồng hành cùng bạn 1 năm
-                                        </h5>
-                                        <p className="text-text-main font-sans text-sm leading-relaxed mb-3">
-                                            Chúng tôi có <span className="font-bold text-primary">văn phòng ở Hà Nội</span>, có thể cầm tay chỉ việc các bạn 
-                                            <span className="font-bold text-primary"> 1-1 trực tiếp</span>, hay <span className="font-bold text-primary">online</span>. 
-                                            Hỗ trợ bạn dù là <span className="font-bold">ngày lễ</span>, hay <span className="font-bold">đêm hôm</span>, 
-                                            có người online <span className="font-bold text-accent">đến 22h</span> phục vụ bạn.
+                                    {/* Support Promise */}
+                                    <div className="p-4 bg-gradient-to-br from-accent/10 via-primary/5 to-accent/10 border border-accent/30 rounded-lg">
+                                        <div className="flex items-start gap-2">
+                                            <Heart className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                                            <div>
+                                                <h5 className="font-bold text-text-main font-heading mb-1.5 text-base">
+                                                    BimSpeed Cam Kết Hỗ Trợ Tận Tâm với bạn đồng hành cùng bạn 1 năm
+                                                </h5>
+                                                <p className="text-text-main font-sans text-xs leading-relaxed mb-2">
+                                                    Chúng tôi có <span className="font-bold text-primary">văn phòng ở Hà Nội</span>, có thể cầm tay chỉ việc các bạn 
+                                                    <span className="font-bold text-primary"> 1-1 trực tiếp</span>, hay <span className="font-bold text-primary">online</span>. 
+                                                    Hỗ trợ bạn dù là <span className="font-bold">ngày lễ</span>, hay <span className="font-bold">đêm hôm</span>, 
+                                                    có người online <span className="font-bold text-accent">đến 22h</span> phục vụ bạn.
+                                                </p>
+                                                <div className="flex items-center gap-2 text-accent font-bold text-xs">
+                                                    <span className="inline-block w-1.5 h-1.5 bg-accent rounded-full animate-pulse"></span>
+                                                    Tất cả vì 1 Việt Nam vươn mình 🇻🇳
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Note */}
+                                    <div className="p-3 bg-accent/10 border border-accent/30 rounded-lg">
+                                        <p className="text-text-main font-sans text-xs leading-relaxed">
+                                            <span className="font-bold text-accent">Bạn Còn Chần Chừ Gì Nữa?</span> Đầu tư vào trí tuệ không bao giờ là lãng phí.
                                         </p>
-                                        <div className="flex items-center gap-2 text-accent font-bold text-sm">
-                                            <span className="inline-block w-2 h-2 bg-accent rounded-full animate-pulse"></span>
-                                            Tất cả vì 1 Việt Nam vươn mình 🇻🇳
+                                    </div>
+                                </div>
+
+                                {/* Right Column - Registration Form */}
+                                <div className="lg:sticky lg:top-8 h-fit">
+                                    <div className="space-y-6">
+                                        <h4 className="text-lg font-bold text-text-main font-heading flex items-center gap-2">
+                                            <Sparkles className="h-5 w-5 text-primary" />
+                                            Thông tin đăng ký
+                                        </h4>
+                                        
+                                        {/* Name Input */}
+                                        <div className="relative">
+                                            <div className="absolute left-4 top-1/2 -translate-y-1/2 text-text-muted">
+                                                <User className="h-5 w-5" />
+                                            </div>
+                                            <input
+                                                type="text"
+                                                name="name"
+                                                value={formData.name}
+                                                onChange={handleInputChange}
+                                                placeholder="Họ và tên"
+                                                className="w-full pl-12 pr-4 py-3.5 bg-bg-surface border-2 border-border rounded-xl text-text-main placeholder:text-text-muted font-sans focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+                                            />
                                         </div>
+
+                                        {/* Email Input */}
+                                        <div className="relative">
+                                            <div className="absolute left-4 top-1/2 -translate-y-1/2 text-text-muted">
+                                                <Mail className="h-5 w-5" />
+                                            </div>
+                                            <input
+                                                type="email"
+                                                name="email"
+                                                value={formData.email}
+                                                onChange={handleInputChange}
+                                                placeholder="Email của bạn"
+                                                className="w-full pl-12 pr-4 py-3.5 bg-bg-surface border-2 border-border rounded-xl text-text-main placeholder:text-text-muted font-sans focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+                                            />
+                                        </div>
+
+                                        {/* Phone Input */}
+                                        <div className="relative">
+                                            <div className="absolute left-4 top-1/2 -translate-y-1/2 text-text-muted">
+                                                <Phone className="h-5 w-5" />
+                                            </div>
+                                            <input
+                                                type="tel"
+                                                name="phone"
+                                                value={formData.phone}
+                                                onChange={handleInputChange}
+                                                placeholder="Số điện thoại"
+                                                className="w-full pl-12 pr-4 py-3.5 bg-bg-surface border-2 border-border rounded-xl text-text-main placeholder:text-text-muted font-sans focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
+                                            />
+                                        </div>
+
+                                        {/* CTA Button */}
+                                        <button 
+                                            onClick={handleRegistration}
+                                            disabled={isSubmitting}
+                                            className="w-full py-5 bg-gradient-to-r from-primary via-accent to-primary text-white font-bold rounded-xl text-lg hover:shadow-2xl transition-all shadow-lg hover:-translate-y-1 font-sans relative overflow-hidden group disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0"
+                                        >
+                                            <span className="relative z-10 flex items-center justify-center gap-2">
+                                                <Sparkles className="h-5 w-5" />
+                                                {isSubmitting ? 'Đang đăng ký...' : 'Đăng Ký Ngay'}
+                                            </span>
+                                            {/* Shine effect */}
+                                            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></div>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
-
-                            {/* Note */}
-                            <div className="mb-6 p-4 bg-accent/10 border-2 border-accent/30 rounded-lg">
-                                <p className="text-text-main font-sans text-sm leading-relaxed">
-                                    <span className="font-bold text-accent">Bạn Còn Chần Chừ Gì Nữa?</span> Đầu tư vào trí tuệ không bao giờ là lãng phí.
-                                </p>
-                            </div>
-
-                            {/* Registration Form */}
-                            <div className="mb-6 space-y-4">
-                                <h4 className="text-lg font-bold text-text-main font-heading flex items-center gap-2">
-                                    <Sparkles className="h-5 w-5 text-primary" />
-                                    Thông tin đăng ký
-                                </h4>
-                                
-                                {/* Name Input */}
-                                <div className="relative">
-                                    <div className="absolute left-4 top-1/2 -translate-y-1/2 text-text-muted">
-                                        <User className="h-5 w-5" />
-                                    </div>
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        value={formData.name}
-                                        onChange={handleInputChange}
-                                        placeholder="Họ và tên"
-                                        className="w-full pl-12 pr-4 py-3.5 bg-bg-surface border-2 border-border rounded-xl text-text-main placeholder:text-text-muted font-sans focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
-                                    />
-                                </div>
-
-                                {/* Email Input */}
-                                <div className="relative">
-                                    <div className="absolute left-4 top-1/2 -translate-y-1/2 text-text-muted">
-                                        <Mail className="h-5 w-5" />
-                                    </div>
-                                    <input
-                                        type="email"
-                                        name="email"
-                                        value={formData.email}
-                                        onChange={handleInputChange}
-                                        placeholder="Email của bạn"
-                                        className="w-full pl-12 pr-4 py-3.5 bg-bg-surface border-2 border-border rounded-xl text-text-main placeholder:text-text-muted font-sans focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
-                                    />
-                                </div>
-
-                                {/* Phone Input */}
-                                <div className="relative">
-                                    <div className="absolute left-4 top-1/2 -translate-y-1/2 text-text-muted">
-                                        <Phone className="h-5 w-5" />
-                                    </div>
-                                    <input
-                                        type="tel"
-                                        name="phone"
-                                        value={formData.phone}
-                                        onChange={handleInputChange}
-                                        placeholder="Số điện thoại"
-                                        className="w-full pl-12 pr-4 py-3.5 bg-bg-surface border-2 border-border rounded-xl text-text-main placeholder:text-text-muted font-sans focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
-                                    />
-                                </div>
-                            </div>
-
-                            {/* CTA Button */}
-                            <button 
-                                onClick={handleRegistration}
-                                disabled={isSubmitting}
-                                className="w-full py-5 bg-gradient-to-r from-primary via-accent to-primary text-white font-bold rounded-xl text-lg hover:shadow-2xl transition-all shadow-lg hover:-translate-y-1 font-sans relative overflow-hidden group disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0"
-                            >
-                                <span className="relative z-10 flex items-center justify-center gap-2">
-                                    <Sparkles className="h-5 w-5" />
-                                    {isSubmitting ? 'Đang đăng ký...' : 'Đăng Ký Ngay'}
-                                </span>
-                                {/* Shine effect */}
-                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></div>
-                            </button>
                         </div>
                     </div>
                 </div>

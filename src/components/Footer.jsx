@@ -32,7 +32,7 @@ export default function Footer() {
                         <ul className="space-y-2 text-sm text-secondary font-sans">
                             <li>Email: hoang.tran@bimspeed.net</li>
                             <li>Hotline: 0936.340.376 (Ms. Hiên)</li>
-                            <li>Địa chỉ: Helios Building - 75 Tam Trinh - Hà Nội</li>
+                            <li>Địa chỉ B401 Helios Building - 75 Tam Trinh - Hà Nội</li>
                         </ul>
                     </div>
                 </div>
