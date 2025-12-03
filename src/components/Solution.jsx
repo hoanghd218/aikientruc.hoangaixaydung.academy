@@ -71,70 +71,70 @@ export default function Solution() {
             beforeImage: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80",
             afterImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80"
         },
-        {
-            title: "Repainting",
-            beforeLabel: "Before",
-            afterLabel: "After",
-            description: "Phối lại màu sơn",
-            beforeImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-            afterImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
-        },
-        {
-            title: "Renovation",
-            beforeLabel: "Current",
-            afterLabel: "Renovated",
-            description: "Lên phương án cải tạo",
-            beforeImage: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80",
-            afterImage: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80"
-        },
-        {
-            title: "Camera Angle",
-            beforeLabel: "Standard",
-            afterLabel: "Creative",
-            description: "Sáng tạo góc máy mới",
-            beforeImage: "/solutions/doi goc cong trinh before.jpg",
-            afterImage: "/solutions/doi goc cong trinh after.jpg"
-        },
-        {
-            title: "Shot Size",
-            beforeLabel: "Wide",
-            afterLabel: "Close-up",
-            description: "Zoom cận cảnh",
-            beforeImage: "/solutions/zoom can canh before.jpg",
-            afterImage: "/solutions/zoom can canh after.jpg"
-        },
-        {
-            title: "Multiple Shot Sizes",
-            beforeLabel: "Single",
-            afterLabel: "Multiple",
-            description: "Tạo bộ ảnh đa cự ly",
-            beforeImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-            afterImage: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80"
-        },
-        {
-            title: "Thêm người, vật vào ảnh",
-            beforeLabel: "Static",
-            afterLabel: "Alive",
-            description: "Thêm người, vật vào ảnh",
-            beforeImage: "/solutions/them nguoi vao anh before.png",
-            afterImage: "/solutions/them nguoi vao anh after.png"
-        },
-        {
-            title: "Day to Night",
-            beforeLabel: "Day",
-            afterLabel: "Night",
-            description: "Biến ngày thành đêm",
-            beforeImage: "/solutions/day to night before.png",
-            afterImage: "/solutions/day to night after.png"
-        },
-        {
-            title: "Upscale & Enhance 4k",
-            beforeLabel: "Low Res",
-            afterLabel: "High Res",
-            description: "Nâng cấp & Làm nét ảnh 4k",
-            beforeImage: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
-            afterImage: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80"
-        }
+        // {
+        //     title: "Repainting",
+        //     beforeLabel: "Before",
+        //     afterLabel: "After",
+        //     description: "Phối lại màu sơn",
+        //     beforeImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+        //     afterImage: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
+        // },
+        // {
+        //     title: "Renovation",
+        //     beforeLabel: "Current",
+        //     afterLabel: "Renovated",
+        //     description: "Lên phương án cải tạo",
+        //     beforeImage: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80",
+        //     afterImage: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80"
+        // },
+        // {
+        //     title: "Camera Angle",
+        //     beforeLabel: "Standard",
+        //     afterLabel: "Creative",
+        //     description: "Sáng tạo góc máy mới",
+        //     beforeImage: "/solutions/doi goc cong trinh before.jpg",
+        //     afterImage: "/solutions/doi goc cong trinh after.jpg"
+        // },
+        // {
+        //     title: "Shot Size",
+        //     beforeLabel: "Wide",
+        //     afterLabel: "Close-up",
+        //     description: "Zoom cận cảnh",
+        //     beforeImage: "/solutions/zoom can canh before.jpg",
+        //     afterImage: "/solutions/zoom can canh after.jpg"
+        // },
+        // {
+        //     title: "Multiple Shot Sizes",
+        //     beforeLabel: "Single",
+        //     afterLabel: "Multiple",
+        //     description: "Tạo bộ ảnh đa cự ly",
+        //     beforeImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+        //     afterImage: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80"
+        // },
+        // {
+        //     title: "Thêm người, vật vào ảnh",
+        //     beforeLabel: "Static",
+        //     afterLabel: "Alive",
+        //     description: "Thêm người, vật vào ảnh",
+        //     beforeImage: "/solutions/them nguoi vao anh before.png",
+        //     afterImage: "/solutions/them nguoi vao anh after.png"
+        // },
+        // {
+        //     title: "Day to Night",
+        //     beforeLabel: "Day",
+        //     afterLabel: "Night",
+        //     description: "Biến ngày thành đêm",
+        //     beforeImage: "/solutions/day to night before.png",
+        //     afterImage: "/solutions/day to night after.png"
+        // },
+        // {
+        //     title: "Upscale & Enhance 4k",
+        //     beforeLabel: "Low Res",
+        //     afterLabel: "High Res",
+        //     description: "Nâng cấp & Làm nét ảnh 4k",
+        //     beforeImage: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
+        //     afterImage: "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=800&q=80"
+        // }
     ];
 
 
