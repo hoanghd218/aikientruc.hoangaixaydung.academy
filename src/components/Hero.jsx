@@ -34,15 +34,14 @@ export default function Hero() {
                         <div className="space-y-6">
                             <div className="inline-flex items-center rounded-full border-2 border-primary/30 bg-gradient-to-r from-primary/10 to-accent/10 px-4 py-2 text-sm font-bold text-primary font-sans shadow-lg backdrop-blur-sm">
                                 <span className="flex h-2.5 w-2.5 rounded-full bg-primary mr-2 animate-pulse"></span>
-                                🚀 Trở thành Master AI Kiến Trúc Nội Thất
+                                🚀 Thành thạo kỹ năng AI Kiến Trúc Nội Thất
                             </div>
                             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl xl:text-6xl/tight font-heading text-text-main leading-tight">
-                                Thành thạo kỹ năng{' '}
+
                                 <span className="relative inline-block">
-                                    <span className="relative z-10 text-primary">AI Kiến Trúc Nội Thất</span>
-                                    <span className="absolute bottom-1 left-0 right-0 h-3 bg-primary/20 -rotate-1"></span>
-                                </span>{' '}
-                                quan trọng nhất trong năm 2026
+                                    Trở thành  <span className="relative z-10 text-primary">Master AI Kiến Trúc Nội Thất</span>
+                                </span>
+                                kỹ năng quan trọng nhất trong năm 2026
                             </h1>
                             <p className="max-w-[600px] text-text-main md:text-xl font-sans leading-relaxed">
                                 Dù bạn chưa biết gì về AI hay làm kiến trúc nội thất cũng đều có thể làm và{' '}
@@ -52,7 +51,7 @@ export default function Hero() {
                         </div>
 
                         <div className="flex flex-col gap-4 min-[400px]:flex-row">
-                            <button 
+                            <button
                                 onClick={() => {
                                     const pricingSection = document.getElementById('pricing');
                                     pricingSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
