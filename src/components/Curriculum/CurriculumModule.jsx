@@ -29,9 +29,19 @@ export function CurriculumModule({ module, description, number, outcomes = [] })
                         </h4>
                     </div>
                     {description && (
-                        <p className="text-sm text-text-muted font-sans leading-relaxed ml-7">
-                            {description}
-                        </p>
+                        <div className="ml-7 mt-2">
+                            {Array.isArray(description) ? (
+                                <ul className="list-disc list-inside space-y-1.5 text-sm text-text-muted font-sans leading-relaxed">
+                                    {description.map((item, idx) => (
+                                        <li key={idx}>{item}</li>
+                                    ))}
+                                </ul>
+                            ) : (
+                                <p className="text-sm text-text-muted font-sans leading-relaxed">
+                                    {description}
+                                </p>
+                            )}
+                        </div>
                     )}
                 </div>
 

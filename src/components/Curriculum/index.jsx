@@ -14,7 +14,12 @@ export function Curriculum() {
     const modules = [
         {
             title: "Module 1: Render ảnh ngoại thất",
-            description: "Học cách render phối cảnh ngoại thất chuyên nghiệp với AI",
+            description: [
+                "Học cách render phối cảnh ngoại thất chuyên nghiệp với AI",
+                "Render ảnh biệt thự ngoại thất",
+                "Render phối cảnh công trình tổng thể",
+                "Tối ưu hóa chất lượng hình ảnh render"
+            ],
             outcomes: [
                 {
                     title: "Render ảnh biệt thự ngoại thất",
@@ -36,7 +41,12 @@ export function Curriculum() {
         },
         {
             title: "Module 2: Render ảnh nội thất",
-            description: "Tạo hình ảnh nội thất ấn tượng trong vài phút",
+            description: [
+                "Tạo hình ảnh nội thất ấn tượng trong vài phút",
+                "Render không gian nội thất chân thực",
+                "Thiết kế nội thất với AI",
+                "Ánh sáng và bố cục trong render nội thất"
+            ],
             outcomes: [
                 {
                     title: "Render không gian nội thất",
@@ -58,7 +68,13 @@ export function Curriculum() {
         },
         {
             title: "Module 3: Các tính năng chỉnh sửa ảnh",
-            description: "Nâng cao kỹ năng chỉnh sửa và tối ưu hình ảnh",
+            description: [
+                "Nâng cao kỹ năng chỉnh sửa và tối ưu hình ảnh",
+                "Chuyển đổi CAD sang ảnh render chân thực",
+                "Chuyển đổi ngày sang đêm",
+                "Thêm người vào ảnh một cách tự nhiên",
+                "Các kỹ thuật chỉnh sửa nâng cao khác"
+            ],
             outcomes: [
                 {
                     title: "Chuyển đổi CAD sang ảnh",
@@ -97,7 +113,13 @@ export function Curriculum() {
         },
         {
             title: "Module 4: Tạo các hình ảnh làm quảng cáo",
-            description: "Thiết kế poster và hình ảnh marketing chuyên nghiệp",
+            description: [
+                "Thiết kế poster và hình ảnh marketing chuyên nghiệp",
+                "Tạo poster quảng cáo với AI",
+                "Thiết kế hình ảnh quảng cáo bất động sản",
+                "Tối ưu hình ảnh cho các kênh marketing",
+                "Best practices trong thiết kế hình ảnh quảng cáo"
+            ],
             outcomes: [
                 {
                     title: "Tạo poster quảng cáo",
@@ -119,7 +141,13 @@ export function Curriculum() {
         },
         {
             title: "Module 5: Tạo video làm quảng cáo",
-            description: "Tạo video giúp bạn kiếm nhiều đơn hơn",
+            description: [
+                "Tạo video giúp bạn kiếm nhiều đơn hơn",
+                "Sản xuất video marketing chuyên nghiệp",
+                "Tạo video demo sản phẩm/dự án",
+                "Kỹ thuật chỉnh sửa và tối ưu video",
+                "Xuất bản và phân phối video"
+            ],
             outcomes: [
                 {
                     title: "Tạo video quảng cáo",
@@ -141,7 +169,13 @@ export function Curriculum() {
         },
         {
             title: "Module 6: Tạo APP với AI",
-            description: "Deploy triển khai app cho doanh nghiệp của bạn",
+            description: [
+                "Deploy triển khai app cho doanh nghiệp của bạn",
+                "Xây dựng ứng dụng với AI",
+                "Tích hợp AI vào workflow công việc",
+                "Deploy ứng dụng lên production",
+                "Bảo trì và cập nhật ứng dụng"
+            ],
             outcomes: [
                 {
                     title: "Xây dựng ứng dụng với AI",
