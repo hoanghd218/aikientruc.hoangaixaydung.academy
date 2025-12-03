@@ -6,9 +6,11 @@ export default function Header() {
         <header className="sticky top-0 z-50 w-full border-b border-border bg-bg-surface/80 backdrop-blur-md supports-[backdrop-filter]:bg-bg-surface/60">
             <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
                 <div className="flex items-center gap-2">
-                    <div className="hidden md:flex h-8 w-8 rounded bg-primary items-center justify-center text-white font-bold font-heading shadow-sm">
-                        B
-                    </div>
+                    <img 
+                        src="/profile/avatar.png" 
+                        alt="Avatar" 
+                        className="hidden md:block h-12 w-12 rounded-full object-cover shadow-sm"
+                    />
                     <span className="text-lg font-bold font-heading tracking-tight text-text-main">KHOÁ HỌC LÀM CHỦ AI KIẾN TRÚC NỘI THẤT 5 NGÀY</span>
                 </div>
 
