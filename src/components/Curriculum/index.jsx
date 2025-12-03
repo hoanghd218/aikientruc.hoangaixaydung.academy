@@ -14,27 +14,152 @@ export function Curriculum() {
     const modules = [
         {
             title: "Module 1: Render ảnh ngoại thất",
-            description: "Học cách render phối cảnh ngoại thất chuyên nghiệp với AI"
+            description: "Học cách render phối cảnh ngoại thất chuyên nghiệp với AI",
+            outcomes: [
+                {
+                    title: "Render ảnh biệt thự ngoại thất",
+                    description: "Tạo hình ảnh render chuyên nghiệp cho biệt thự",
+                    media: {
+                        type: "image",
+                        url: "/hero-image/biet thu.png"
+                    }
+                },
+                {
+                    title: "Render phối cảnh công trình",
+                    description: "Tạo phối cảnh tổng thể công trình",
+                    media: {
+                        type: "image",
+                        url: "/hero-image/anh-bat-dong-san.png"
+                    }
+                }
+            ]
         },
         {
             title: "Module 2: Render ảnh nội thất",
-            description: "Tạo hình ảnh nội thất ấn tượng trong vài phút"
+            description: "Tạo hình ảnh nội thất ấn tượng trong vài phút",
+            outcomes: [
+                {
+                    title: "Render không gian nội thất",
+                    description: "Tạo hình ảnh nội thất chân thực",
+                    media: {
+                        type: "image",
+                        url: "/hero-image/noi that 1.png"
+                    }
+                },
+                {
+                    title: "Thiết kế nội thất với AI",
+                    description: "Thiết kế và render nội thất nhanh chóng",
+                    media: {
+                        type: "image",
+                        url: "/hero-image/biet thu co gia dinh.png"
+                    }
+                }
+            ]
         },
         {
             title: "Module 3: Các tính năng chỉnh sửa ảnh",
-            description: "Nâng cao kỹ năng chỉnh sửa và tối ưu hình ảnh"
+            description: "Nâng cao kỹ năng chỉnh sửa và tối ưu hình ảnh",
+            outcomes: [
+                {
+                    title: "Chuyển đổi CAD sang ảnh",
+                    description: "Biến bản vẽ CAD thành ảnh render chân thực",
+                    media: {
+                        type: "compare",
+                        beforeImage: "/solutions/cad to photo before.jpg",
+                        afterImage: "/solutions/cad to photo after.jpg",
+                        beforeLabel: "CAD",
+                        afterLabel: "Render"
+                    }
+                },
+                {
+                    title: "Chuyển đổi ngày sang đêm",
+                    description: "Tạo hiệu ứng đêm cho ảnh ban ngày",
+                    media: {
+                        type: "compare",
+                        beforeImage: "/solutions/day to night before.jpg",
+                        afterImage: "/solutions/day to night after.png",
+                        beforeLabel: "Ban ngày",
+                        afterLabel: "Ban đêm"
+                    }
+                },
+                {
+                    title: "Thêm người vào ảnh",
+                    description: "Chèn người vào ảnh render một cách tự nhiên",
+                    media: {
+                        type: "compare",
+                        beforeImage: "/solutions/them nguoi vao anh before.png",
+                        afterImage: "/solutions/them nguoi vao anh after.png",
+                        beforeLabel: "Trước",
+                        afterLabel: "Sau"
+                    }
+                }
+            ]
         },
         {
             title: "Module 4: Tạo các hình ảnh làm quảng cáo",
-            description: "Thiết kế poster và hình ảnh marketing chuyên nghiệp"
+            description: "Thiết kế poster và hình ảnh marketing chuyên nghiệp",
+            outcomes: [
+                {
+                    title: "Tạo poster quảng cáo",
+                    description: "Thiết kế poster marketing chuyên nghiệp",
+                    media: {
+                        type: "image",
+                        url: "/hero-image/anh-nha-thau-poster.png"
+                    }
+                },
+                {
+                    title: "Tạo hình ảnh quảng cáo BĐS",
+                    description: "Thiết kế hình ảnh marketing bất động sản",
+                    media: {
+                        type: "image",
+                        url: "/hero-image/anh-bat-dong-san.png"
+                    }
+                }
+            ]
         },
         {
             title: "Module 5: Tạo video làm quảng cáo",
-            description: "Tạo video giúp bạn kiếm nhiều đơn hơn"
+            description: "Tạo video giúp bạn kiếm nhiều đơn hơn",
+            outcomes: [
+                {
+                    title: "Tạo video quảng cáo",
+                    description: "Sản xuất video marketing chuyên nghiệp",
+                    media: {
+                        type: "video",
+                        url: "https://www.youtube.com/watch?v=Mqn-XG_UYdc"
+                    }
+                },
+                {
+                    title: "Video demo sản phẩm",
+                    description: "Tạo video giới thiệu sản phẩm/dự án",
+                    media: {
+                        type: "gif",
+                        url: "/solutions/day to night after.png"
+                    }
+                }
+            ]
         },
         {
             title: "Module 6: Tạo APP với AI",
-            description: "Deploy triển khai app cho doanh nghiệp của bạn"
+            description: "Deploy triển khai app cho doanh nghiệp của bạn",
+            outcomes: [
+                {
+                    title: "Xây dựng ứng dụng với AI",
+                    description: "Tạo app cho doanh nghiệp của bạn",
+                    media: {
+                        type: "image",
+                        url: "/rendering-interface.png"
+                    }
+                },
+                {
+                    title: "Deploy ứng dụng",
+                    description: "Triển khai app lên production",
+                    media: {
+                        type: "image",
+                        url: "/rendering-interface.png"
+                    }
+                }
+            ]
         }
     ];
 
@@ -110,13 +235,14 @@ export function Curriculum() {
                     <h3 className="text-2xl md:text-3xl font-bold font-heading text-text-main mb-8 text-center">
                         6 Modules Chuyên Sâu
                     </h3>
-                    <div className="grid md:grid-cols-2 gap-6">
+                    <div className="grid grid-cols-1 gap-6">
                         {modules.map((module, index) => (
                             <CurriculumModule 
                                 key={index} 
                                 module={module.title}
                                 description={module.description}
                                 number={index + 1}
+                                outcomes={module.outcomes}
                             />
                         ))}
                     </div>

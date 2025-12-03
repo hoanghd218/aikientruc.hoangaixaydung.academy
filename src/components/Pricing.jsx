@@ -63,35 +63,32 @@ export default function Pricing() {
         {
             icon: <Video className="h-5 w-5" />,
             title: "Truy cập trọn đời nội dung khóa học",
-            highlight: true
+            highlight: true,
+            value: "1.500.000đ"
         },
         {
             icon: <Smartphone className="h-5 w-5" />,
             title: "APP Render ảnh, video trọn đời (Giá thường 200k/tháng) - Update liên tục",
             highlight: true,
-            badge: "Chỉ hôm nay"
+            badge: "Chỉ hôm nay",
+            value: "2.400.000đ"
         },
         {
             icon: <Sparkles className="h-5 w-5" />,
             title: "Bộ Prompt AI chuyên dụng cho kiến trúc",
-            highlight: true
-        },
-        {
-            icon: <BookOpen className="h-5 w-5" />,
-            title: "Ebook hướng dẫn chi tiết"
-        },
-        {
-            icon: <Users className="h-5 w-5" />,
-            title: "Tham gia cộng đồng học viên kín"
+            highlight: true,
+            value: "500.000đ"
         },
         {
             icon: <Clock className="h-5 w-5" />,
             title: "Zoom Live 2h mỗi tuần - Hỗ trợ trực tiếp",
-            highlight: true
+            highlight: true,
+            value: "1.000.000đ"
         },
         {
             icon: <Gift className="h-5 w-5" />,
-            title: "Update kiến thức mới miễn phí"
+            title: "Update kiến thức mới miễn phí",
+            value: "500.000đ"
         }
     ];
 
@@ -134,7 +131,9 @@ export default function Pricing() {
                             {/* Pricing Header */}
                             <div className="text-center mb-10">
                                 <h3 className="text-2xl font-bold text-text-main font-heading mb-4">
-                                    Trọn Bộ Khóa Học AI Architect
+                                    ĐĂNG KÝ NGAY LỘ TRÌNH KHÓA HỌC AI KIẾN TRÚC NỘI THẤT
+                                    <br />
+                                    ĐỂ NHẬN TRỌN BỘ QUÀ TẶNG VÀ ƯU ĐÃI
                                 </h3>
                                 <div className="flex items-center justify-center gap-3 mb-3">
                                     <span className="text-2xl md:text-3xl text-text-muted line-through font-sans decoration-primary/50">
@@ -181,6 +180,15 @@ export default function Pricing() {
                                                     }`}>
                                                         {item.title}
                                                     </span>
+                                                    {item.value && (
+                                                        <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${
+                                                            item.highlight 
+                                                                ? 'bg-primary/20 text-primary border border-primary/30' 
+                                                                : 'bg-secondary/20 text-secondary border border-secondary/30'
+                                                        }`}>
+                                                            Trị giá {item.value}
+                                                        </span>
+                                                    )}
                                                     {item.badge && (
                                                         <span className="bg-gradient-to-r from-accent to-primary text-white text-xs font-bold px-2 py-0.5 rounded-full">
                                                             {item.badge}
@@ -199,9 +207,14 @@ export default function Pricing() {
                                         <div className="flex items-start gap-2">
                                             <Heart className="h-5 w-5 text-accent shrink-0 mt-0.5" />
                                             <div>
-                                                <h5 className="font-bold text-text-main font-heading mb-1.5 text-base">
-                                                    BimSpeed Cam Kết Hỗ Trợ Tận Tâm với bạn đồng hành cùng bạn 1 năm
-                                                </h5>
+                                                <div className="flex items-center gap-2 flex-wrap mb-1.5">
+                                                    <h5 className="font-bold text-text-main font-heading text-base">
+                                                        BimSpeed Cam Kết Hỗ Trợ Tận Tâm với bạn đồng hành cùng bạn 1 năm
+                                                    </h5>
+                                                    <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-primary/20 text-primary border border-primary/30">
+                                                        Trị giá 2.000.000đ
+                                                    </span>
+                                                </div>
                                                 <p className="text-text-main font-sans text-xs leading-relaxed mb-2">
                                                     Chúng tôi có <span className="font-bold text-primary">văn phòng ở Hà Nội</span>, có thể cầm tay chỉ việc các bạn 
                                                     <span className="font-bold text-primary"> 1-1 trực tiếp</span>, hay <span className="font-bold text-primary">online</span>. 
@@ -290,6 +303,19 @@ export default function Pricing() {
                                             {/* Shine effect */}
                                             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></div>
                                         </button>
+
+                                        {/* Notice */}
+                                        <div className="space-y-2 pt-2">
+                                            <p className="text-xs text-text-muted font-sans leading-relaxed">
+                                                * Chú ý: Tư vấn viên sẽ liên hệ lại để xác nhận đăng ký khóa học cho bạn.
+                                            </p>
+                                            <p className="text-xs text-text-muted font-sans leading-relaxed">
+                                                * Hãy kiểm tra lại thông tin họ tên và số điện thoại của bạn đã điền đúng trước khi bấm "Đăng Ký Ngay"
+                                            </p>
+                                            <p className="text-xs text-text-muted font-sans leading-relaxed">
+                                                * Học phí sẽ tăng khi ưu đãi kết thúc
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
