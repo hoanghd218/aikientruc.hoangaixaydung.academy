@@ -14,6 +14,7 @@ import { useEffect } from 'react';
 function App() {
 
  useEffect(() => {
+  
   const options = {
     autoConfig: true,
     debug: true,
@@ -21,7 +22,6 @@ function App() {
   
   ReactFacebookPixel.init("25646519821650616", options);
   ReactFacebookPixel.pageView();
-
 
  }, []);
 

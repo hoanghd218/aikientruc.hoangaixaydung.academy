@@ -10,12 +10,12 @@ import ReactPixel from 'react-facebook-pixel';
 const projectId = "uegs5kjw3t"
 clarity.init(projectId)
 
-const options = {
-  autoConfig: true, // set pixel's autoConfig. More info: https://developers.facebook.com/docs/facebook-pixel/advanced/
-  debug: false, // enable logs
-};
+// const options = {
+//   autoConfig: true, // set pixel's autoConfig. More info: https://developers.facebook.com/docs/facebook-pixel/advanced/
+//   debug: false, // enable logs
+// };
 
-ReactPixel.init('1353685299464281', null, options);
+// ReactPixel.init('1353685299464281', null, options);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
