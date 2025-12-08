@@ -26,9 +26,10 @@ export default function Pricing() {
             alert('Vui lòng điền đầy đủ thông tin');
             return;
         }
-        
-        setIsSubmitting(true);
-        
+
+
+        fbq('track', 'Purchase')
+
         try {
             // Call API
             const response = await fetch('https://n8n.bimspeed.net/webhook/96f3480a-e078-4b76-813a-79f08caedafc', {
@@ -115,7 +116,7 @@ export default function Pricing() {
                     <div className="relative">
                         {/* Decorative background blur */}
                         <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 via-accent/20 to-primary/20 rounded-3xl blur-xl opacity-50"></div>
-                        
+
                         {/* Main pricing card */}
                         <div className="relative p-8 md:p-10 bg-gradient-to-br from-bg-surface via-bg-main to-bg-surface border-2 border-primary/30 rounded-2xl shadow-2xl">
                             {/* Badge */}
@@ -159,33 +160,30 @@ export default function Pricing() {
                                         <Gift className="h-5 w-5 text-primary" />
                                         Bạn sẽ nhận được:
                                     </h4>
-                                    
+
                                     {/* Benefits List - Compact */}
                                     <div className="space-y-2.5">
                                         {benefits.map((item, i) => (
-                                            <div 
-                                                key={i} 
+                                            <div
+                                                key={i}
                                                 className="flex items-start gap-3 relative"
                                             >
-                                                <div className={`mt-0.5 ${
-                                                    item.highlight ? 'text-primary' : 'text-secondary'
-                                                }`}>
+                                                <div className={`mt-0.5 ${item.highlight ? 'text-primary' : 'text-secondary'
+                                                    }`}>
                                                     {item.icon}
                                                 </div>
                                                 <div className="flex-1 flex items-center gap-2 flex-wrap">
-                                                    <span className={`font-sans text-sm ${
-                                                        item.highlight 
-                                                            ? 'font-bold text-text-main' 
+                                                    <span className={`font-sans text-sm ${item.highlight
+                                                            ? 'font-bold text-text-main'
                                                             : 'font-medium text-text-main'
-                                                    }`}>
+                                                        }`}>
                                                         {item.title}
                                                     </span>
                                                     {item.value && (
-                                                        <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${
-                                                            item.highlight 
-                                                                ? 'bg-primary/20 text-primary border border-primary/30' 
+                                                        <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${item.highlight
+                                                                ? 'bg-primary/20 text-primary border border-primary/30'
                                                                 : 'bg-secondary/20 text-secondary border border-secondary/30'
-                                                        }`}>
+                                                            }`}>
                                                             Trị giá {item.value}
                                                         </span>
                                                     )}
@@ -195,9 +193,8 @@ export default function Pricing() {
                                                         </span>
                                                     )}
                                                 </div>
-                                                <Check className={`h-4 w-4 shrink-0 mt-0.5 ${
-                                                    item.highlight ? 'text-primary' : 'text-secondary'
-                                                }`} />
+                                                <Check className={`h-4 w-4 shrink-0 mt-0.5 ${item.highlight ? 'text-primary' : 'text-secondary'
+                                                    }`} />
                                             </div>
                                         ))}
                                     </div>
@@ -216,9 +213,9 @@ export default function Pricing() {
                                                     </span>
                                                 </div>
                                                 <p className="text-text-main font-sans text-xs leading-relaxed mb-2">
-                                                    Chúng tôi có <span className="font-bold text-primary">văn phòng ở Hà Nội</span>, có thể cầm tay chỉ việc các bạn 
-                                                    <span className="font-bold text-primary"> 1-1 trực tiếp</span>, hay <span className="font-bold text-primary">online</span>. 
-                                                    Hỗ trợ bạn dù là <span className="font-bold">ngày lễ</span>, hay <span className="font-bold">đêm hôm</span>, 
+                                                    Chúng tôi có <span className="font-bold text-primary">văn phòng ở Hà Nội</span>, có thể cầm tay chỉ việc các bạn
+                                                    <span className="font-bold text-primary"> 1-1 trực tiếp</span>, hay <span className="font-bold text-primary">online</span>.
+                                                    Hỗ trợ bạn dù là <span className="font-bold">ngày lễ</span>, hay <span className="font-bold">đêm hôm</span>,
                                                     có người online <span className="font-bold text-accent">đến 22h</span> phục vụ bạn.
                                                 </p>
                                                 <div className="flex items-center gap-2 text-accent font-bold text-xs">
@@ -244,7 +241,7 @@ export default function Pricing() {
                                             <Sparkles className="h-5 w-5 text-primary" />
                                             Thông tin đăng ký
                                         </h4>
-                                        
+
                                         {/* Name Input */}
                                         <div className="relative">
                                             <div className="absolute left-4 top-1/2 -translate-y-1/2 text-text-muted">
@@ -291,7 +288,7 @@ export default function Pricing() {
                                         </div>
 
                                         {/* CTA Button */}
-                                        <button 
+                                        <button
                                             onClick={handleRegistration}
                                             disabled={isSubmitting}
                                             className="w-full py-5 bg-gradient-to-r from-primary via-accent to-primary text-white font-bold rounded-xl text-lg hover:shadow-2xl transition-all shadow-lg hover:-translate-y-1 font-sans relative overflow-hidden group disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0"
