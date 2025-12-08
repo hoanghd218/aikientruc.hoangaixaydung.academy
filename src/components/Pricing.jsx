@@ -30,6 +30,8 @@ export default function Pricing() {
 
 
 
+        ReactFacebookPixel.track("Lead");
+
  
         ReactFacebookPixel.track("Purchase", {
             value: 799000,

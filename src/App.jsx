@@ -5,10 +5,17 @@ import PaymentPage from './pages/PaymentPage';
 import FreeCourse2SessionPage from './pages/FreeCourse2SessionPage';
 import ThankYouFreePage from './pages/ThankYouFreePage';
 import ThankYouFreePageMuaKhoaHoc from './pages/ThankYouFreePageMuaKhoaHoc';
-
+import { useLocation } from "react-router-dom";
 
 import ReactFacebookPixel from "react-facebook-pixel";
 import { useEffect } from 'react';
+
+const location = useLocation();
+
+  useEffect(() => {
+    ReactFacebookPixel.pageView();
+  }, [location]);
+
 
 
 const options = {
