@@ -10,11 +10,6 @@ import { useLocation } from "react-router-dom";
 import ReactFacebookPixel from "react-facebook-pixel";
 import { useEffect } from 'react';
 
-const location = useLocation();
-
-  useEffect(() => {
-    ReactFacebookPixel.pageView();
-  }, [location]);
 
 
 
@@ -27,11 +22,19 @@ ReactFacebookPixel.init("25646519821650616", options);
 ReactFacebookPixel.pageView();
 function App() {
 
- useEffect(() => {
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactFacebookPixel.pageView();
+  }, [location]);
 
 
 
- }, []);
+  useEffect(() => {
+
+
+
+  }, []);
 
   return (
     <Routes>
