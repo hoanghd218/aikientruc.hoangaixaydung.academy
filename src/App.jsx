@@ -11,17 +11,18 @@ import ReactFacebookPixel from "react-facebook-pixel";
 import { useEffect } from 'react';
 
 
+const options = {
+  autoConfig: true,
+  debug: true,
+};
+
+ReactFacebookPixel.init("25646519821650616", options);
+ReactFacebookPixel.pageView();
 function App() {
 
  useEffect(() => {
-  
-  const options = {
-    autoConfig: true,
-    debug: true,
-  };
-  
-  ReactFacebookPixel.init("25646519821650616", options);
-  ReactFacebookPixel.pageView();
+
+
 
  }, []);
 
