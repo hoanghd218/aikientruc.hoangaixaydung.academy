@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Check, Sparkles, Clock, Users, BookOpen, Video, Gift, Smartphone, MapPin, Headphones, Heart, User, Mail, Phone } from 'lucide-react';
 import ReactPixel from 'react-facebook-pixel';
+import ReactFacebookPixel from "react-facebook-pixel";
 
 export default function Pricing() {
     const navigate = useNavigate();
@@ -28,7 +29,12 @@ export default function Pricing() {
         }
 
 
-        fbq('track', 'Purchase')
+
+ 
+        ReactFacebookPixel.track("Purchase", {
+            value: 799000,
+            currency: "VND",
+          });
 
         try {
             // Call API
