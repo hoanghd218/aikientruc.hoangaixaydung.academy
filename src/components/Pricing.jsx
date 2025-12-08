@@ -56,7 +56,6 @@ export default function Pricing() {
                 throw new Error('Đăng ký thất bại');
             }
 
-            ReactPixel.track('Đăng ký', formData);
 
             // Navigate to payment page on success
             navigate('/mua-khoa-hoc-ai-kientruc', { state: formData });
