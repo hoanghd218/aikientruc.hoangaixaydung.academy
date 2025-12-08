@@ -7,34 +7,23 @@ import ThankYouFreePage from './pages/ThankYouFreePage';
 import ThankYouFreePageMuaKhoaHoc from './pages/ThankYouFreePageMuaKhoaHoc';
 import { useLocation } from "react-router-dom";
 
-import ReactFacebookPixel from "react-facebook-pixel";
 import { useEffect } from 'react';
 
 
-
-
-const options = {
-  autoConfig: true,
-  debug: true,
-};
-
-ReactFacebookPixel.init("25646519821650616", options);
-ReactFacebookPixel.pageView();
 function App() {
 
   const location = useLocation();
 
-  useEffect(() => {
-    ReactFacebookPixel.pageView();
-  }, [location]);
-
 
 
   useEffect(() => {
+    // global fbq from index.html
+    if (window.fbq) {
+      window.fbq('track', 'PageView');
+    }
+  }, [location.pathname]);
 
 
-
-  }, []);
 
   return (
     <Routes>

@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Check, Sparkles, Clock, Users, BookOpen, Video, Gift, Smartphone, MapPin, Headphones, Heart, User, Mail, Phone } from 'lucide-react';
-import ReactPixel from 'react-facebook-pixel';
-import ReactFacebookPixel from "react-facebook-pixel";
+
 
 export default function Pricing() {
     const navigate = useNavigate();
@@ -29,14 +28,14 @@ export default function Pricing() {
         }
 
 
+        if (window.fbq) {
+            window.fbq('track', 'Purchase');
+        }
 
-        ReactFacebookPixel.track("Lead");
+        if (window.fbq) {
+            window.fbq('track', 'Lead');
+        }
 
- 
-        ReactFacebookPixel.track("Purchase", {
-            value: 799000,
-            currency: "VND",
-          });
 
         try {
             // Call API
@@ -182,15 +181,15 @@ export default function Pricing() {
                                                 </div>
                                                 <div className="flex-1 flex items-center gap-2 flex-wrap">
                                                     <span className={`font-sans text-sm ${item.highlight
-                                                            ? 'font-bold text-text-main'
-                                                            : 'font-medium text-text-main'
+                                                        ? 'font-bold text-text-main'
+                                                        : 'font-medium text-text-main'
                                                         }`}>
                                                         {item.title}
                                                     </span>
                                                     {item.value && (
                                                         <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${item.highlight
-                                                                ? 'bg-primary/20 text-primary border border-primary/30'
-                                                                : 'bg-secondary/20 text-secondary border border-secondary/30'
+                                                            ? 'bg-primary/20 text-primary border border-primary/30'
+                                                            : 'bg-secondary/20 text-secondary border border-secondary/30'
                                                             }`}>
                                                             Trị giá {item.value}
                                                         </span>
