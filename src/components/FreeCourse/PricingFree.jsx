@@ -30,6 +30,12 @@ export default function PricingFree() {
 
         setIsSubmitting(true);
 
+        ReactPixel.track('Đăng ký', formData);
+        ReactPixel.track('Purchase', formData);
+
+        ReactPixel.track('Lead', formData);
+
+
         try {
             // Call API - Sử dụng webhook cho khóa FREE 2 ngày
             const response = await fetch('https://n8n.bimspeed.net/webhook/6135553c-02ef-4ad6-b05a-c1b431c4f182', {
@@ -50,7 +56,7 @@ export default function PricingFree() {
                 throw new Error('Đăng ký thất bại');
             }
 
-            ReactPixel.track('Đăng ký', formData);
+      
 
             // Redirect to thank you page
             navigate('/cam-on-dang-ky-khoa-free');
