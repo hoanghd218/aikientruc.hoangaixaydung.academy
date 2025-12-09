@@ -6,10 +6,8 @@ import FreeCourse2SessionPage from './pages/FreeCourse2SessionPage';
 import ThankYouFreePage from './pages/ThankYouFreePage';
 import ThankYouFreePageMuaKhoaHoc from './pages/ThankYouFreePageMuaKhoaHoc';
 import { useLocation } from "react-router-dom";
-
 import { useEffect } from 'react';
-
-
+import ReactPixel from 'react-facebook-pixel';
 function App() {
 
   const location = useLocation();
@@ -18,9 +16,12 @@ function App() {
 
   useEffect(() => {
     // global fbq from index.html
-    if (window.fbq) {
-      window.fbq('track', 'PageView');
-    }
+    // if (window.fbq) {
+    //   window.fbq('track', 'PageView');
+    // }
+
+
+    ReactPixel.track('PageView');
   }, [location.pathname]);
 
 

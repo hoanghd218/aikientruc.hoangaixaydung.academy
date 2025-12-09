@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Check, Sparkles, Clock, Users, BookOpen, Video, Gift, Smartphone, MapPin, Headphones, Heart, User, Mail, Phone } from 'lucide-react';
-
+import ReactPixel from 'react-facebook-pixel';
 
 export default function Pricing() {
     const navigate = useNavigate();
@@ -28,13 +28,18 @@ export default function Pricing() {
         }
 
 
-        if (window.fbq) {
-            window.fbq('track', 'Purchase');
-        }
+        ReactPixel.track('Đăng ký', formData);
+        ReactPixel.track('Purchase', formData);
 
-        if (window.fbq) {
-            window.fbq('track', 'Lead');
-        }
+        ReactPixel.track('Lead', formData);
+
+        // if (window.fbq) {
+        //     window.fbq('track', 'Purchase');
+        // }
+
+        // if (window.fbq) {
+        //     window.fbq('track', 'Lead');
+        // }
 
 
         try {
