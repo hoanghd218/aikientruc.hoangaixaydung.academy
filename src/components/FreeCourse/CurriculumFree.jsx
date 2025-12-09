@@ -332,7 +332,7 @@ export function CurriculumFree() {
                         </span>
                     </div>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold font-heading text-text-main mb-6 leading-tight max-w-4xl mx-auto">
-                        Học Thử <span className="text-primary">2 Module Đầu Tiên</span> Hoàn Toàn Miễn Phí
+                        Học  <span className="text-primary">2 ngày ứng dụng AI thực chiến</span> Hoàn Toàn Miễn Phí
                     </h2>
                     <p className="text-text-muted text-lg max-w-2xl mx-auto">
                         Trải nghiệm sức mạnh của AI trong kiến trúc mà không mất bất kỳ chi phí nào
