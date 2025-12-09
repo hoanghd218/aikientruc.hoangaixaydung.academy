@@ -13,7 +13,7 @@ clarity.init(projectId)
 
 const options = {
   autoConfig: true, // set pixel's autoConfig. More info: https://developers.facebook.com/docs/facebook-pixel/advanced/
-  debug: false, // enable logs
+  debug: true, // enable logs
 };
 
 
