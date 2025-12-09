@@ -29,7 +29,8 @@ function InstructorProfileImageFree() {
     const images = [
         '/profile/hoang 1.png',
         '/profile/sj1.jpeg',
-        '/profile/sj2.jpeg'
+        '/profile/sj2.jpeg',
+        '/profile/training nha dep.jpg'
     ];
 
     // Auto slide every 3 seconds
@@ -168,25 +169,25 @@ function InstructorContentFree() {
         {
             name: 'Facebook',
             icon: Facebook,
-            url: 'https://www.facebook.com/tonyhoang.bimspeed',
+            url: 'https://www.facebook.com/hoanghd218/',
             color: 'hover:text-blue-600'
         },
         {
             name: 'TikTok',
             icon: Music,
-            url: 'https://www.tiktok.com/@bimspeed',
+            url: 'https://www.tiktok.com/@tran_hoang_ai_xay_dung',
             color: 'hover:text-black'
         },
         {
             name: 'LinkedIn',
             icon: Linkedin,
-            url: 'https://www.linkedin.com/in/tonyhoang-bimspeed',
+            url: 'https://www.linkedin.com/in/hoanghd218/',
             color: 'hover:text-blue-700'
         },
         {
             name: 'YouTube',
             icon: Youtube,
-            url: 'https://www.youtube.com/@bimspeed',
+            url: 'https://www.youtube.com/@tony-hoang-ai-automation',
             color: 'hover:text-red-600'
         }
     ];

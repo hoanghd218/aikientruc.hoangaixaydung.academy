@@ -9,7 +9,7 @@ export default function HeaderFree() {
                     <div className="h-8 w-8 rounded bg-primary flex items-center justify-center text-white font-bold font-heading shadow-sm">
                         B
                     </div>
-                    <span className="text-lg font-bold font-heading tracking-tight text-text-main">Bimspeed AI</span>
+                    <span className="text-lg font-bold font-heading tracking-tight text-text-main">Tony Hoang</span>
                 </div>
 
                 <nav className="hidden md:flex items-center gap-6 text-sm font-medium font-sans text-text-muted">
