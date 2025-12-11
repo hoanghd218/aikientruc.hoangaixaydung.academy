@@ -91,16 +91,16 @@ export default function Solution() {
             icon: LayoutTemplate,
             mainImage: "/solutions/sketch to image after.png",
             subImage: "/solutions/sketch to image before.jpg",
-            description1: "Khách hàng và các bên liên quan khó hình dung không gian chỉ từ sketch/phối cảnh đường nét, dẫn đến nhiều hiểu nhầm và vòng lặp góp ý kéo dài. Quy trình render truyền thống tốn thời gian, chi phí và phụ thuộc 3D artist; mỗi lần thay vật liệu, chỉnh ánh sáng hay đổi bối cảnh đều phải 'render lại từ đầu', dễ lệch góc máy, sai tỷ lệ so với ý tưởng gốc và đẩy deadline vào thế rủi ro.",
-            description2: "Ứng dụng AI chuyển sketch → ảnh photoreal trong vài phút, lock góc máy-tỷ lệ-massing để giữ trọn ý đồ thiết kế, đồng thời mô phỏng vật liệu, ánh sáng, bóng đổ và bối cảnh đô thị Việt Nam một cách thuyết phục. Từ một sketch có thể xuất hàng loạt biến thể để so sánh song song, giảm 70-90% thời gian vòng lặp, giúp khách hàng ra quyết định nhanh hơn."
+            description1: "Trong quy trình thiết kế nội thất và kiến trúc, khách hàng rất khó hình dung không gian chỉ từ sketch hoặc bản vẽ line-work, dẫn đến hiểu nhầm ý tưởng và kéo dài các vòng góp ý. Mỗi lần thay vật liệu, chỉnh ánh sáng hay thử phương án mới đều phải dựng lại và render lại từ đầu, tốn nhiều giờ đồng hồ và chi phí nhân sự. Việc render truyền thống còn dễ làm lệch góc máy, thay đổi tỷ lệ và đánh mất bố cục gốc trong sketch. Đây là “nút thắt cổ chai” khiến team thiết kế mất năng suất, còn deadline liên tục bị đẩy lùi.",
+            description2: "BimSpeed AI cho phép chuyển sketch → ảnh photoreal chỉ trong vài phút, tự động lock góc máy – tỷ lệ – massing để giữ trọn ý đồ thiết kế, đồng thời mô phỏng vật liệu, ánh sáng, bóng đổ và bối cảnh Việt Nam cực kỳ chân thực. Tất cả prompt đã được BimSpeed AI tinh chỉnh sẵn, chỉ cần upload sketch là hệ thống tự xử lý, không tốn công sức setup hay thử đi thử lại. Từ một bản phác thảo, bạn có thể tạo ngay hàng loạt biến thể để so sánh song song, tối ưu 90% thời gian vòng lặp chỉnh sửa và giúp khách hàng chốt phương án nhanh hơn rất nhiều.."
         },
         {
             title: "CAD To Photo",
             icon: FileText,
             mainImage: "/solutions/cad to photo after.jpg",
             subImage: "/solutions/cad to photo before.jpg",
-            description1: "Bản vẽ CAD 2D (mặt đứng/mặt cắt) khó truyền tải chiều sâu, vật liệu và ánh sáng, khiến khách hàng dễ hiểu sai tỷ lệ. Muốn 'nhìn như thật' thường phải dựng 3D + render, tốn 3–7 ngày/ảnh, phát sinh 3–5 vòng chỉnh và chi phí lớn; đổi vật liệu/bối cảnh lại phải chạy lại từ đầu, rủi ro trễ 1–2 tuần khi dự án gấp.",
-            description2: "AI chuyển CAD → ảnh photoreal trực tiếp từ file DWG/PDF/linework: lock trục, nhịp cột, kích thước theo CAD (sai lệch hình học < 2–3%), tự mô phỏng đá/kính/gỗ, bóng đổ và bối cảnh đường phố Việt Nam. Từ 1 mặt đứng CAD xuất ngay 3–7 biến thể, giảm 70–90% thời gian vòng lặp và tiết kiệm 40–60% chi phí."
+            description1: "Khách hàng, các bác thợ ít hiểu biết cách đọc Autocad, nên khách hàng dễ mơ hồ, bạn khó chốt đơn? Vậy đâu là giải pháp?",
+            description2: "Ứng dụng AI giúp chuyển CAD sang ảnh thật, render nhiều phuơng án 1 lúc, bạn ko cần mất nhiều công sức học, prompt, có sẵn tài liệu App chỉ việc dùng."
         },
         {
             title: "Model To Photo",
