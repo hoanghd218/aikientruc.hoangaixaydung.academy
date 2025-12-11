@@ -2,7 +2,7 @@ import React from 'react';
 import HeaderFree from '../components/FreeCourse/HeaderFree';
 import HeroFree from '../components/FreeCourse/HeroFree';
 import { FeaturesFree } from '../components/FreeCourse/FeaturesFree';
-import SolutionFree from '../components/FreeCourse/SolutionFree';
+import Solution from '../components/Solution';
 import { CurriculumFree } from '../components/FreeCourse/CurriculumFree';
 import { InstructorFree } from '../components/FreeCourse/InstructorFree';
 import PricingFree from '../components/FreeCourse/PricingFree';
@@ -15,7 +15,7 @@ export default function FreeCourse2SessionPage() {
       <main>
         <HeroFree />
         <FeaturesFree />
-        <SolutionFree />
+        <Solution />
         <CurriculumFree />
         <InstructorFree />
         <PricingFree />
