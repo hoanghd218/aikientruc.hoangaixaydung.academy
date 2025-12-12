@@ -48,16 +48,16 @@ export default function HeroFree() {
                             </p>
                         </div>
 
-                        <div className="flex flex-col gap-4 min-[400px]:flex-row">
+                        <div className="flex flex-col gap-4 sm:flex-row">
                             <button
                                 onClick={() => {
                                     const pricingSection = document.getElementById('pricing');
                                     pricingSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
                                 }}
-                                className="group inline-flex h-14 items-center justify-center rounded-xl bg-gradient-to-r from-primary to-accent px-8 text-base font-bold text-white shadow-xl shadow-primary/40 transition-all hover:shadow-2xl hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary font-sans relative overflow-hidden"
+                                className="group inline-flex h-auto min-h-[56px] items-center justify-center rounded-xl bg-gradient-to-r from-primary to-accent px-6 py-4 text-base font-bold text-white shadow-xl shadow-primary/40 transition-all hover:shadow-2xl hover:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary font-sans relative overflow-hidden"
                             >
-                                <span className="relative z-10 flex items-center gap-2">
-                                    Đăng ký miễn phí <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                                <span className="relative z-10 flex items-center gap-2 text-center">
+                                    Đăng ký miễn phí <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform shrink-0" />
                                 </span>
                                 <div className="absolute inset-0 bg-gradient-to-r from-accent to-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
                             </button>
@@ -66,9 +66,9 @@ export default function HeroFree() {
                                     const gallerySection = document.getElementById('zoom-gallery');
                                     gallerySection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
                                 }}
-                                className="inline-flex h-14 items-center justify-center rounded-xl border-2 border-primary/30 bg-bg-surface px-8 text-base font-bold text-text-main shadow-sm transition-all hover:bg-primary/5 hover:border-primary/50 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary font-sans"
+                                className="inline-flex h-auto min-h-[56px] items-center justify-center rounded-xl border-2 border-primary/30 bg-bg-surface px-6 py-4 text-center text-base font-bold text-text-main shadow-sm transition-all hover:bg-primary/5 hover:border-primary/50 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary font-sans whitespace-normal"
                             >
-                                Xem kết các anh em khác đạt được trong 2 ngày
+                                Xem kết quả các anh em khác đạt được trong 2 ngày
                             </button>
                         </div>
 
