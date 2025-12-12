@@ -5,11 +5,13 @@ export default function HeaderFree() {
     return (
         <header className="sticky top-0 z-50 w-full border-b border-border bg-bg-surface/80 backdrop-blur-md supports-[backdrop-filter]:bg-bg-surface/60">
             <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-                <div className="flex items-center gap-2">
-                    <div className="h-8 w-8 rounded bg-primary flex items-center justify-center text-white font-bold font-heading shadow-sm">
-                        B
-                    </div>
-                    <span className="text-lg font-bold font-heading tracking-tight text-text-main">Tony Hoang</span>
+                <div className="relative z-50 flex items-center">
+                    <img
+                        src="/tony hoang ai architect.png"
+                        alt="Tony Hoang"
+                        className="absolute left-0 top-6 md:top-10 -translate-y-1/2 h-30 md:h-48 w-auto max-w-none object-contain drop-shadow-2xl transition-transform hover:scale-105"
+                    />
+                    <div className="w-32 h-px invisible"></div>
                 </div>
 
                 <nav className="hidden md:flex items-center gap-6 text-sm font-medium font-sans text-text-muted">
@@ -20,7 +22,7 @@ export default function HeaderFree() {
                 </nav>
 
                 <div className="flex items-center gap-4">
-                    <button 
+                    <button
                         onClick={() => {
                             const pricingSection = document.getElementById('pricing');
                             pricingSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
