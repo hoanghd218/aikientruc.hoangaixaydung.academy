@@ -49,7 +49,7 @@ export default function HeroFree() {
                         </div>
 
                         <div className="flex flex-col gap-4 min-[400px]:flex-row">
-                            <button 
+                            <button
                                 onClick={() => {
                                     const pricingSection = document.getElementById('pricing');
                                     pricingSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -61,8 +61,14 @@ export default function HeroFree() {
                                 </span>
                                 <div className="absolute inset-0 bg-gradient-to-r from-accent to-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
                             </button>
-                            <button className="inline-flex h-14 items-center justify-center rounded-xl border-2 border-primary/30 bg-bg-surface px-8 text-base font-bold text-text-main shadow-sm transition-all hover:bg-primary/5 hover:border-primary/50 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary font-sans">
-                                Xem nội dung chi tiết
+                            <button
+                                onClick={() => {
+                                    const gallerySection = document.getElementById('zoom-gallery');
+                                    gallerySection?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                }}
+                                className="inline-flex h-14 items-center justify-center rounded-xl border-2 border-primary/30 bg-bg-surface px-8 text-base font-bold text-text-main shadow-sm transition-all hover:bg-primary/5 hover:border-primary/50 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary font-sans"
+                            >
+                                Xem kết các anh em khác đạt được trong 2 ngày
                             </button>
                         </div>
 

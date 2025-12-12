@@ -1,5 +1,24 @@
 import React from 'react';
-import { Check, Star, User, BookOpen, Clock, Award } from 'lucide-react';
+import { Star, User, Clock, Award } from 'lucide-react';
+
+// Pain point data
+const PAIN_POINTS = [
+    {
+        icon: User,
+        title: 'Sợ mất việc',
+        description: 'AI đang thay đổi ngành kiến trúc. Những ai không biết dùng AI sẽ bị thay thế bởi những người biết.'
+    },
+    {
+        icon: User,
+        title: 'Sợ mất khách',
+        description: 'Khách hàng đang chọn những kiến trúc sư có thể đưa ra phương án nhanh hơn, nhiều hơn. Bạn có đang thua cuộc?'
+    },
+    {
+        icon: Award,
+        title: 'Sợ tụt hậu',
+        description: 'Đồng nghiệp đã sử dụng AI và làm việc nhanh gấp 10 lần. Còn bạn thì vẫn đang render xuyên đêm.'
+    }
+];
 
 function FeaturesHeaderFree() {
     return (
@@ -26,33 +45,16 @@ function FeaturesHeaderFree() {
     );
 }
 
-function PainPointCardFree({ title, description, image, icon }) {
+function PainPointCard({ icon: Icon, title, description }) {
     return (
-        <div className="group relative overflow-hidden rounded-xl border border-primary/20 bg-gradient-to-br from-primary/5 to-bg-surface hover:border-primary/40 hover:shadow-xl transition-all duration-300">
-            {/* Image */}
-            <div className="relative h-48 overflow-hidden">
-                <img
-                    src={image}
-                    alt={title}
-                    className="w-full h-full object-cover opacity-70 group-hover:opacity-90 group-hover:scale-105 transition-all duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-bg-surface via-bg-surface/60 to-transparent"></div>
-            </div>
-
-            {/* Content */}
-            <div className="p-6 relative -mt-8">
-                <div className="flex items-center gap-3 mb-3">
-                    <div className="p-3 rounded-lg bg-primary/15 text-primary border border-primary/30">
-                        {icon}
-                    </div>
-                    <h3 className="text-xl font-bold text-text-main font-heading">
-                        {title}
-                    </h3>
-                </div>
-                <p className="text-text-muted text-sm font-sans leading-relaxed">
-                    {description}
-                </p>
-            </div>
+        <div className="p-8 rounded-xl bg-gradient-to-br from-primary/5 to-bg-surface border border-primary/20 hover:border-primary/30 transition-colors">
+            <h3 className="text-2xl font-bold text-text-main mb-4 font-heading flex items-center gap-3">
+                <Icon className="h-6 w-6 text-primary flex-shrink-0" />
+                {title}
+            </h3>
+            <p className="text-lg text-text-muted leading-relaxed font-sans">
+                {description}
+            </p>
         </div>
     );
 }
@@ -63,7 +65,7 @@ function ProcessComparisonFree() {
             <div className="grid md:grid-cols-2 gap-4">
                 {/* Old Process */}
                 <div className="flex items-start gap-4 p-5 rounded-xl border border-secondary/40 bg-secondary/10">
-                    <div className="flex-shrink-0 p-3 rounded-lg bg-secondary/20 text-secondary mt-0.5">
+                    <div className="flex-shrink-0 p-3 rounded-lg bg-secondary/20 text-secondary">
                         <Clock className="h-6 w-6" />
                     </div>
                     <div>
@@ -76,7 +78,7 @@ function ProcessComparisonFree() {
 
                 {/* New AI Process */}
                 <div className="flex items-start gap-4 p-5 rounded-xl border border-primary/40 bg-primary/10">
-                    <div className="flex-shrink-0 p-3 rounded-lg bg-primary/20 text-primary mt-0.5">
+                    <div className="flex-shrink-0 p-3 rounded-lg bg-primary/20 text-primary">
                         <Star className="h-6 w-6" />
                     </div>
                     <div>
@@ -97,45 +99,14 @@ export function FeaturesFree() {
             <div className="container mx-auto px-4 md:px-6">
                 <FeaturesHeaderFree />
 
-                {/* Pain Points - Narrative Style */}
-                <div className="max-w-4xl mx-auto mb-12">
-                    <div className="prose prose-lg max-w-none">
-                        {/* Pain Point 1 */}
-                        <div className="mb-8 p-8 rounded-xl bg-gradient-to-br from-primary/5 to-bg-surface border border-primary/20">
-                            <h3 className="text-2xl font-bold text-text-main mb-4 font-heading flex items-center gap-3">
-                                <User className="h-6 w-6 text-primary" />
-                                Sợ mất việc
-                            </h3>
-                            <p className="text-lg text-text-muted leading-relaxed font-sans">
-                                AI đang thay đổi ngành kiến trúc. Những ai không biết dùng AI sẽ bị thay thế bởi những người biết.
-                            </p>
-                        </div>
-
-                        {/* Pain Point 2 */}
-                        <div className="mb-8 p-8 rounded-xl bg-gradient-to-br from-primary/5 to-bg-surface border border-primary/20">
-                            <h3 className="text-2xl font-bold text-text-main mb-4 font-heading flex items-center gap-3">
-                                <User className="h-6 w-6 text-primary" />
-                                Sợ mất khách
-                            </h3>
-                            <p className="text-lg text-text-muted leading-relaxed font-sans">
-                                Khách hàng đang chọn những kiến trúc sư có thể đưa ra phương án nhanh hơn, nhiều hơn. Bạn có đang thua cuộc?
-                            </p>
-                        </div>
-
-                        {/* Pain Point 3 */}
-                        <div className="mb-8 p-8 rounded-xl bg-gradient-to-br from-primary/5 to-bg-surface border border-primary/20">
-                            <h3 className="text-2xl font-bold text-text-main mb-4 font-heading flex items-center gap-3">
-                                <Award className="h-6 w-6 text-primary" />
-                                Sợ tụt hậu
-                            </h3>
-                            <p className="text-lg text-text-muted leading-relaxed font-sans">
-                                Đồng nghiệp đã sử dụng AI và làm việc nhanh gấp 10 lần. Còn bạn thì vẫn đang render xuyên đêm.
-                            </p>
-                        </div>
-                    </div>
+                {/* Pain Points */}
+                <div className="max-w-4xl mx-auto mb-12 space-y-6">
+                    {PAIN_POINTS.map((point, index) => (
+                        <PainPointCard key={index} {...point} />
+                    ))}
                 </div>
 
-                {/* Bottom Comparison */}
+                {/* Process Comparison */}
                 <ProcessComparisonFree />
             </div>
         </section>

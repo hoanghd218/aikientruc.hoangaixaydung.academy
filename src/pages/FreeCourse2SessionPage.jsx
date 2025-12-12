@@ -4,6 +4,7 @@ import HeroFree from '../components/FreeCourse/HeroFree';
 import { FeaturesFree } from '../components/FreeCourse/FeaturesFree';
 import Solution from '../components/Solution';
 import { CurriculumFree } from '../components/FreeCourse/CurriculumFree';
+import { ZoomGalleryFree } from '../components/FreeCourse/ZoomGalleryFree';
 import { InstructorFree } from '../components/FreeCourse/InstructorFree';
 import PricingFree from '../components/FreeCourse/PricingFree';
 import FooterFree from '../components/FreeCourse/FooterFree';
@@ -17,6 +18,7 @@ export default function FreeCourse2SessionPage() {
         <FeaturesFree />
         <Solution />
         <CurriculumFree />
+        <ZoomGalleryFree />
         <InstructorFree />
         <PricingFree />
       </main>
