@@ -152,6 +152,27 @@ export default function Solution() {
         },
     ];
 
+    const VIDEO_FEATURES = [
+        {
+            type: 'video',
+            videoId: 'Mqn-XG_UYdc',
+            title: 'Video Review Nhà',
+            description: 'Tạo video tour 3D chuyên nghiệp quanh căn nhà, giống như có cameraman thực sự'
+        },
+        {
+            type: 'video',
+            videoId: 'U2tVYMGdCdw',
+            title: 'Video Timelapse',
+            description: 'Tạo video timelapse quá trình xây dựng từ nền móng đến hoàn thiện, ấn tượng và chuyên nghiệp'
+        },
+        {
+            type: 'image',
+            imageSrc: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80',
+            title: 'Video Quảng Cáo',
+            description: 'Tạo video quảng cáo cinematic cho dự án, thu hút khách hàng với hình ảnh đẹp mắt'
+        }
+    ];
+
     return (
         <section id="solution" className="py-16 md:py-24 border-b border-border bg-bg-surface overflow-hidden">
             <div className="container mx-auto px-4 md:px-6">
@@ -164,15 +185,12 @@ export default function Solution() {
                         </span>
                     </div>
                     <h2 className="text-3xl md:text-5xl font-bold font-heading text-text-main mb-6 leading-tight">
-                        Bộ Công Cụ{' '}
+                        Hơn 30 ứng dụng trong{' '}
                         <span className="relative inline-block">
-                            <span className="relative z-10 text-primary">Quyền Năng</span>
+                            <span className="relative z-10 text-primary"> Kiến Trúc,Quy hoạch ,Nội thất</span>
                             <span className="absolute bottom-1 left-0 right-0 h-3 bg-primary/20 -rotate-1"></span>
-                        </span>{' '}
+                        </span>
                     </h2>
-                    <p className="text-text-muted text-lg md:text-xl font-sans leading-relaxed">
-                        Không chỉ dừng lại ở Sketch hay CAD, chúng tôi cung cấp giải pháp render cho mọi giai đoạn của quy trình thiết kế kiến trúc.
-                    </p>
                 </div>
 
                 {/* Features List */}
@@ -209,102 +227,49 @@ export default function Solution() {
                             </div>
 
                             <div className="grid md:grid-cols-3 gap-6">
-                                <div className="group bg-bg-surface rounded-2xl border-2 border-border hover:border-accent/60 transition-all hover:shadow-2xl overflow-hidden hover:-translate-y-2 duration-300 cursor-pointer">
-                                    <div className="relative h-56 overflow-hidden bg-bg-muted">
-                                        <iframe
-                                            width="100%"
-                                            height="100%"
-                                            src="https://www.youtube.com/embed/Mqn-XG_UYdc"
-                                            title="Video Review Nhà Demo"
-                                            frameBorder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowFullScreen
-                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                                        ></iframe>
-                                        <div className="absolute inset-0 bg-gradient-to-t from-text-main/80 via-text-main/20 to-transparent pointer-events-none"></div>
-                                        <div className="absolute top-4 left-4 px-3 py-1.5 bg-accent text-white text-xs font-bold rounded-lg shadow-lg flex items-center gap-1.5">
-                                            <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-                                            VIDEO
-                                        </div>
-                                    </div>
-
-                                    <div className="p-6">
-                                        <div className="flex items-center gap-3 mb-3">
-                                            <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-accent/20 to-accent/10 text-accent flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                                                <Sparkles className="h-6 w-6" />
+                                {VIDEO_FEATURES.map((feature, index) => (
+                                    <div key={index} className="group bg-bg-surface rounded-2xl border-2 border-border hover:border-accent/60 transition-all hover:shadow-2xl overflow-hidden hover:-translate-y-2 duration-300 cursor-pointer">
+                                        <div className="relative h-56 overflow-hidden bg-bg-muted">
+                                            {feature.type === 'video' ? (
+                                                <iframe
+                                                    width="100%"
+                                                    height="100%"
+                                                    src={`https://www.youtube.com/embed/${feature.videoId}`}
+                                                    title={feature.title}
+                                                    frameBorder="0"
+                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                    allowFullScreen
+                                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                                ></iframe>
+                                            ) : (
+                                                <img
+                                                    src={feature.imageSrc}
+                                                    alt={feature.title}
+                                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                                                />
+                                            )}
+                                            <div className="absolute inset-0 bg-gradient-to-t from-text-main/80 via-text-main/20 to-transparent pointer-events-none"></div>
+                                            <div className={`absolute top-4 left-4 px-3 py-1.5 ${feature.type === 'video' ? 'bg-primary' : 'bg-accent'} text-white text-xs font-bold rounded-lg shadow-lg flex items-center gap-1.5`}>
+                                                <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                                                VIDEO
                                             </div>
-                                            <h4 className="text-xl font-bold text-text-main font-heading">
-                                                Video Review Nhà
-                                            </h4>
                                         </div>
-                                        <p className="text-sm text-text-muted font-sans leading-relaxed">
-                                            Tạo video tour 3D chuyên nghiệp quanh căn nhà, giống như có cameraman thực sự
-                                        </p>
-                                    </div>
-                                </div>
 
-                                <div className="group bg-bg-surface rounded-2xl border-2 border-border hover:border-primary/60 transition-all hover:shadow-2xl overflow-hidden hover:-translate-y-2 duration-300 cursor-pointer">
-                                    <div className="relative h-56 overflow-hidden bg-bg-muted">
-                                        <iframe
-                                            width="100%"
-                                            height="100%"
-                                            src="https://www.youtube.com/embed/U2tVYMGdCdw"
-                                            title="Video Timelapse Demo"
-                                            frameBorder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                            allowFullScreen
-                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                                        ></iframe>
-                                        <div className="absolute inset-0 bg-gradient-to-t from-text-main/80 via-text-main/20 to-transparent pointer-events-none"></div>
-                                        <div className="absolute top-4 left-4 px-3 py-1.5 bg-primary text-white text-xs font-bold rounded-lg shadow-lg flex items-center gap-1.5">
-                                            <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-                                            VIDEO
-                                        </div>
-                                    </div>
-
-                                    <div className="p-6">
-                                        <div className="flex items-center gap-3 mb-3">
-                                            <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-primary/20 to-primary/10 text-primary flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                                                <Sparkles className="h-6 w-6" />
+                                        <div className="p-6">
+                                            <div className="flex items-center gap-3 mb-3">
+                                                <div className={`h-12 w-12 rounded-xl bg-gradient-to-br ${feature.type === 'video' ? 'from-primary/20 to-primary/10 text-primary' : 'from-accent/20 to-accent/10 text-accent'} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform`}>
+                                                    <Sparkles className="h-6 w-6" />
+                                                </div>
+                                                <h4 className="text-xl font-bold text-text-main font-heading">
+                                                    {feature.title}
+                                                </h4>
                                             </div>
-                                            <h4 className="text-xl font-bold text-text-main font-heading">
-                                                Video Timelapse
-                                            </h4>
-                                        </div>
-                                        <p className="text-sm text-text-muted font-sans leading-relaxed">
-                                            Tạo video timelapse quá trình xây dựng từ nền móng đến hoàn thiện, ấn tượng và chuyên nghiệp
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div className="group bg-bg-surface rounded-2xl border-2 border-border hover:border-accent/60 transition-all hover:shadow-2xl overflow-hidden hover:-translate-y-2 duration-300 cursor-pointer">
-                                    <div className="relative h-56 overflow-hidden bg-bg-muted">
-                                        <img
-                                            src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80"
-                                            alt="Video Quảng Cáo Demo"
-                                            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                                        />
-                                        <div className="absolute inset-0 bg-gradient-to-t from-text-main/80 via-text-main/20 to-transparent"></div>
-                                        <div className="absolute top-4 left-4 px-3 py-1.5 bg-accent text-white text-xs font-bold rounded-lg shadow-lg flex items-center gap-1.5">
-                                            <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
-                                            VIDEO
+                                            <p className="text-sm text-text-muted font-sans leading-relaxed">
+                                                {feature.description}
+                                            </p>
                                         </div>
                                     </div>
-
-                                    <div className="p-6">
-                                        <div className="flex items-center gap-3 mb-3">
-                                            <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-accent/20 to-accent/10 text-accent flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
-                                                <Sparkles className="h-6 w-6" />
-                                            </div>
-                                            <h4 className="text-xl font-bold text-text-main font-heading">
-                                                Video Quảng Cáo
-                                            </h4>
-                                        </div>
-                                        <p className="text-sm text-text-muted font-sans leading-relaxed">
-                                            Tạo video quảng cáo cinematic cho dự án, thu hút khách hàng với hình ảnh đẹp mắt
-                                        </p>
-                                    </div>
-                                </div>
+                                ))}
                             </div>
                         </div>
                     </div>

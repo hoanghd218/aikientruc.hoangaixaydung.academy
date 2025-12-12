@@ -6,12 +6,11 @@ export default function Footer() {
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid md:grid-cols-4 gap-8 mb-8">
                     <div className="col-span-1 md:col-span-2">
-                        <div className="flex items-center gap-2 mb-4">
-                            <div className="h-8 w-8 rounded bg-primary flex items-center justify-center text-white font-bold font-heading">
-                                B
-                            </div>
-                            <span className="text-xl font-bold font-heading tracking-tight text-white">Bimspeed AI</span>
-                        </div>
+                        <img
+                            src="/tony hoang ai architect.png"
+                            alt="Tony Hoang AI Architect"
+                            className="h-40 mb-4 object-contain"
+                        />
                         <p className="text-secondary font-sans max-w-xs">
                             Nền tảng đào tạo ứng dụng AI trong kiến trúc hàng đầu Việt Nam.
                         </p>
