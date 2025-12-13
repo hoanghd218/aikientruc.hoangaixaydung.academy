@@ -16,7 +16,7 @@ export default function ThankYouFreePage() {
     };
 
     const handleJoinZalo = () => {
-        window.open('https://zalo.me/g/ghjisy452', '_blank');
+        window.open('https://zalo.me/g/ozdngh272', '_blank');
     };
 
     return (
@@ -125,7 +125,7 @@ export default function ThankYouFreePage() {
                             <p className="text-text-muted text-lg max-w-2xl mx-auto">
                                 Để tôi tặng thêm bạn:
                                 Thì hãy chuyển khoản cho tôi 199.000đ theo thông tin bên dưới với nội dung chuyển khoản là số điện thoại của bạn
-                                Sau khi chuyển khoản xong bạn hãy gửi ảnh chuyển khoản thành công vào nhóm <a className='text-blue-500 font-bold' href="https://zalo.me/g/ghjisy452" target="_blank" rel="noopener noreferrer">Zalo TẠI ĐÂY</a>
+                                Sau khi chuyển khoản xong bạn hãy gửi ảnh chuyển khoản thành công vào nhóm <a className='text-blue-500 font-bold' href="https://zalo.me/g/ozdngh272" target="_blank" rel="noopener noreferrer">Zalo TẠI ĐÂY</a>
                             </p>
                         </div>
 
@@ -261,7 +261,7 @@ export default function ThankYouFreePage() {
                                         </div>
 
                                         <div className="mt-8 text-center space-y-4">
-                                            <button className="text-primary font-bold hover:underline inline-flex items-center gap-2 group" onClick={() => window.open('https://zalo.me/g/ghjisy452', '_blank')}>
+                                            <button className="text-primary font-bold hover:underline inline-flex items-center gap-2 group" onClick={() => window.open('https://zalo.me/g/ozdngh272', '_blank')}>
                                                 <span>Đã chuyển khoản? Xác nhận tại Zalo</span>
                                                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                                             </button>

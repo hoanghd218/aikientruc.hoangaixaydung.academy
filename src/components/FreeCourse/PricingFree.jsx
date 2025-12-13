@@ -236,7 +236,7 @@ export default function PricingFree() {
                                         2 Buổi Học AI Kiến Trúc Miễn Phí lúc
                                     </h3>
 
-                                    <p className=' font-bold text-primary '>20h - vào ngày 13,14/12/2025</p>
+                                    <p className=' font-bold text-primary '>20h - vào ngày 22,23/12/2025</p>
                                     <div className="flex items-center justify-center gap-3 mb-3">
                                         <span className="text-5xl md:text-6xl font-bold text-primary font-heading">
                                             0đ
