@@ -125,7 +125,7 @@ export default function ThankYouFreePage() {
                             <p className="text-text-muted text-lg max-w-2xl mx-auto">
                                 Để tôi tặng thêm bạn:
                                 Thì hãy chuyển khoản cho tôi 199.000đ theo thông tin bên dưới với nội dung chuyển khoản là số điện thoại của bạn
-                                Sau khi chuyển khoản xong bạn hãy gửi ảnh chuyển khoản thành công vào nhóm <a className='text-blue-500 font-bold' href="https://zalo.me/g/qbaxol856" target="_blank" rel="noopener noreferrer">Zalo TẠI ĐÂY</a>
+                                Sau khi chuyển khoản xong bạn hãy gửi ảnh chuyển khoản thành công vào nhóm <a className='text-blue-500 font-bold' href="https://zalo.me/g/ghjisy452" target="_blank" rel="noopener noreferrer">Zalo TẠI ĐÂY</a>
                             </p>
                         </div>
 
