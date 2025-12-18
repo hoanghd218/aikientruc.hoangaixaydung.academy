@@ -41,8 +41,8 @@ export default function PaymentPage() {
                         <div className="bg-gradient-to-r from-primary to-accent p-6">
                             <h2 className="text-white text-2xl font-bold font-heading flex items-center gap-3">
                                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <rect x="3" y="4" width="18" height="16" rx="2" strokeWidth="2"/>
-                                    <line x1="3" y1="10" x2="21" y2="10" strokeWidth="2"/>
+                                    <rect x="3" y="4" width="18" height="16" rx="2" strokeWidth="2" />
+                                    <line x1="3" y1="10" x2="21" y2="10" strokeWidth="2" />
                                 </svg>
                                 THÔNG TIN CHUYỂN KHOẢN
                             </h2>
@@ -52,13 +52,13 @@ export default function PaymentPage() {
                         <div className="p-8">
                             <div className="bg-white border-4 border-gray-100 rounded-2xl p-6 shadow-lg mb-6">
                                 <div className="flex justify-center mb-4">
-                                    <img 
-                                        src="https://img.vietqr.io/image/VCB-9866915868-compact2.png?amount=799000&addInfo=KHOAHOC%20AI%20KIENTRUC&accountName=TRAN%20VAN%20HOANG"
+                                    <img
+                                        src="https://img.vietqr.io/image/VCB-9866915868-compact2.png?amount=899000&addInfo=KHOAHOC%20AI%20KIENTRUC&accountName=TRAN%20VAN%20HOANG"
                                         alt="VietQR Code"
                                         className="w-64 h-64 object-contain"
                                     />
                                 </div>
-                                
+
                                 {/* Account Details */}
                                 <div className="space-y-3 border-t pt-4">
                                     <div className="flex justify-between items-center">
@@ -71,7 +71,7 @@ export default function PaymentPage() {
                                     </div>
                                     <div className="flex justify-between items-center">
                                         <span className="text-sm text-gray-600 font-sans">Số tiền</span>
-                                        <span className="text-lg font-bold text-primary font-sans">799.000 VND</span>
+                                        <span className="text-lg font-bold text-primary font-sans">899.000 VND</span>
                                     </div>
                                 </div>
                             </div>
@@ -113,7 +113,7 @@ export default function PaymentPage() {
 
                                 <div className="flex justify-between items-center p-4 bg-accent/10 rounded-xl border-2 border-accent/30">
                                     <span className="text-gray-900 font-bold font-sans">Số Tiền</span>
-                                    <span className="font-bold text-2xl text-primary font-heading">799.000 VND</span>
+                                    <span className="font-bold text-2xl text-primary font-heading">899.000 VND</span>
                                 </div>
                             </div>
 
@@ -133,7 +133,7 @@ export default function PaymentPage() {
                             <h2 className="text-4xl font-bold text-center mb-6 font-heading text-primary">
                                 CÒN 1 BƯỚC NỮA
                             </h2>
-                            
+
                             <p className="text-center text-lg text-gray-700 mb-8 font-sans leading-relaxed">
                                 Sau khi chuyển khoản thành công, hãy gửi
                                 <br />
@@ -148,14 +148,14 @@ export default function PaymentPage() {
                                 <span className="relative z-10 flex items-center justify-center gap-2">
                                     TÔI ĐÃ CHUYỂN KHOẢN THÀNH CÔNG
                                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <circle cx="12" cy="12" r="10" strokeWidth="2"/>
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4"/>
+                                        <circle cx="12" cy="12" r="10" strokeWidth="2" />
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4" />
                                     </svg>
                                 </span>
                                 {/* Shine effect */}
                                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent translate-x-[-200%] group-hover:translate-x-[200%] transition-transform duration-1000"></div>
                             </button>
-                            
+
                             <p className="text-center text-sm text-gray-600 font-sans">
                                 (Sẵm vào đây để vào nhóm Zalo)
                             </p>
@@ -210,12 +210,12 @@ export default function PaymentPage() {
 
                 {/* Back to Home Link */}
                 <div className="text-center mt-12">
-                    <a 
+                    <a
                         href="/"
                         className="inline-flex items-center gap-2 text-primary hover:text-accent transition-colors font-sans font-medium"
                     >
                         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                         </svg>
                         Quay lại trang chủ
                     </a>

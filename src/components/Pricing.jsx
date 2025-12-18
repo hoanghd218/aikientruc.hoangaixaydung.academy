@@ -152,7 +152,7 @@ export default function Pricing() {
                                         2.990.000đ
                                     </span>
                                     <span className="text-5xl md:text-6xl font-bold text-primary font-heading">
-                                        799.000đ
+                                        899.000đ
                                     </span>
                                 </div>
                                 <div className="inline-flex items-center gap-2 px-4 py-2 bg-accent/10 border border-accent/30 rounded-full">
