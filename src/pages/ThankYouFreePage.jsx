@@ -16,7 +16,7 @@ export default function ThankYouFreePage() {
     };
 
     const handleJoinZalo = () => {
-        window.open('https://zalo.me/g/ozdngh272', '_blank');
+        window.open('https://zalo.me/g/pmotxf386', '_blank');
     };
 
     return (
@@ -96,7 +96,7 @@ export default function ThankYouFreePage() {
                                     </ul>
                                 </div>
 
-                                <div className="w-full md:w-auto shrink-0">
+                                <div className="w-full md:w-auto shrink-0 flex flex-col items-center">
                                     <button
                                         onClick={handleJoinZalo}
                                         className="w-full md:w-auto px-8 py-6 bg-gradient-to-r from-primary via-accent to-primary text-white font-bold rounded-2xl text-xl shadow-lg shadow-primary/25 hover:shadow-2xl hover:scale-105 transition-all duration-300 relative overflow-hidden group/btn"
@@ -110,6 +110,18 @@ export default function ThankYouFreePage() {
                                     </button>
                                     <p className="mt-3 text-sm text-center text-text-muted">
                                         Đã có hơn 500+ học viên đang chờ bạn
+                                    </p>
+
+                                    <div className="mt-6 relative group">
+                                        <div className="absolute -inset-2 bg-primary/20 rounded-2xl blur-lg opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+                                        <img
+                                            src="/zoom/group%20k3.png"
+                                            alt="Zalo Group QR"
+                                            className="relative w-48 md:w-56 rounded-xl shadow-md border-4 border-white"
+                                        />
+                                    </div>
+                                    <p className="mt-2 text-primary font-bold text-sm animate-pulse">
+                                        Hoặc quét mã QR tại đây
                                     </p>
                                 </div>
                             </div>
