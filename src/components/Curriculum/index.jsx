@@ -1,6 +1,7 @@
 import React from 'react';
 import { CurriculumModule } from './CurriculumModule';
 import { CurriculumTestimonials } from './CurriculumTestimonials';
+import { ZoomGalleryKhoaChinhThuc } from '../ZoomGalleryKhoaChinhThuc';
 import { Sparkles, Video, Clock, Award } from 'lucide-react';
 
 export function Curriculum() {
@@ -219,7 +220,7 @@ export function Curriculum() {
                         {/* Decorative corner */}
                         <div className="absolute -top-4 -left-4 w-12 h-12 border-t-4 border-l-4 border-primary/30 rounded-tl-2xl"></div>
                         <div className="absolute -bottom-4 -right-4 w-12 h-12 border-b-4 border-r-4 border-primary/30 rounded-br-2xl"></div>
-                        
+
                         <div className="relative bg-gradient-to-br from-primary/10 via-bg-surface to-secondary/5 border-2 border-primary/20 rounded-2xl p-8 md:p-10 shadow-lg">
                             <div className="flex items-start gap-4 mb-6">
                                 <div className="flex-shrink-0 p-3 rounded-xl bg-primary/15 text-primary">
@@ -230,7 +231,7 @@ export function Curriculum() {
                                         🎯 Cam Kết Của Khóa Học
                                     </h3>
                                     <p className="text-base md:text-lg text-text-main font-sans leading-relaxed">
-                                        <span className="font-bold text-primary">Tất cả các giải pháp trên</span> được tôi trình bày trong khóa học này đã được tôi quay sẵn, trình bày rõ ràng, ngắn gọn, chi tiết. 
+                                        <span className="font-bold text-primary">Tất cả các giải pháp trên</span> được tôi trình bày trong khóa học này đã được tôi quay sẵn, trình bày rõ ràng, ngắn gọn, chi tiết.
                                         Và <span className="font-bold text-accent">mỗi tuần zoom 1 buổi 2 tiếng</span> hỗ trợ các bạn và hướng dẫn kiến thức mới.
                                     </p>
                                 </div>
@@ -271,8 +272,8 @@ export function Curriculum() {
                     </h3>
                     <div className="grid grid-cols-1 gap-6">
                         {modules.map((module, index) => (
-                            <CurriculumModule 
-                                key={index} 
+                            <CurriculumModule
+                                key={index}
                                 module={module.title}
                                 description={module.description}
                                 number={index + 1}
@@ -281,8 +282,9 @@ export function Curriculum() {
                         ))}
                     </div>
 
-                    {/* Student Testimonials Section */}
                     <CurriculumTestimonials />
+
+                    <ZoomGalleryKhoaChinhThuc />
 
                     {/* Bottom CTA */}
                     <div className="mt-12 text-center">
@@ -290,7 +292,7 @@ export function Curriculum() {
                             <p className="text-text-main font-sans text-lg mb-4">
                                 <span className="font-bold text-primary">Kiến thức thực chiến</span>, áp dụng được ngay vào công việc 💼
                             </p>
-                            <button 
+                            <button
                                 onClick={handleScrollToPricing}
                                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-bold rounded-lg hover:bg-primary/90 transition-all hover:shadow-lg hover:-translate-y-0.5"
                             >

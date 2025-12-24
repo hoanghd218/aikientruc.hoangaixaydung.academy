@@ -20,10 +20,33 @@ export default function Pricing() {
         }));
     };
 
+    const validateEmail = (email) => {
+        return String(email)
+            .toLowerCase()
+            .match(
+                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            );
+    };
+
+    const validatePhone = (phone) => {
+        const vnf_regex = /((09|03|07|08|05)+([0-9]{8})\b)/g;
+        return vnf_regex.test(phone);
+    };
+
     const handleRegistration = async () => {
         // Validate form data
         if (!formData.name || !formData.email || !formData.phone) {
             alert('Vui lòng điền đầy đủ thông tin');
+            return;
+        }
+
+        if (!validateEmail(formData.email)) {
+            alert('Email không hợp lệ. Vui lòng kiểm tra lại');
+            return;
+        }
+
+        if (!validatePhone(formData.phone)) {
+            alert('Số điện thoại không hợp lệ. Vui lòng nhập số điện thoại Việt Nam (ví dụ: 0912345678)');
             return;
         }
 
@@ -56,6 +79,25 @@ export default function Pricing() {
                     submittedAt: new Date().toISOString()
                 })
             });
+
+            // Call ESA API as requested
+            try {
+                await fetch('https://esa.dcso.pro/api/customers/ladipage/14', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        name: formData.name,
+                        email: formData.email,
+                        phone: formData.phone,
+                        message: "Tôi muốn nhận 100 mẫu nhà miễn phí"
+                    })
+                });
+            } catch (esaError) {
+                console.error('ESA registration error:', esaError);
+                // We don't throw here to ensure the main flow continues
+            }
 
             if (!response.ok) {
                 throw new Error('Đăng ký thất bại');

@@ -29,7 +29,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<FreeCourse2SessionPage />} />
+      <Route path="/" element={<HomePage />} />
       <Route path="/ai-kien-truc-chuyen-sau" element={<HomePage />} />
       <Route path="/mua-khoa-hoc-ai-kientruc" element={<ThankYouFreePageMuaKhoaHoc />} />
       <Route path="/ai-kien-truc-2-buoi-free" element={<FreeCourse2SessionPage />} />
