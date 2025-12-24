@@ -82,7 +82,9 @@ export default function Pricing() {
 
             // Call ESA API as requested
             try {
-                await fetch('https://esa.dcso.pro/api/customers/ladipage/14', {
+                const rootUrl = window.location.origin + window.location.pathname;
+                const qs = window.location.search;
+                await fetch('https://esa.dcso.pro/api/customers/ladipage/14?u=' + rootUrl + '?' + qs, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
