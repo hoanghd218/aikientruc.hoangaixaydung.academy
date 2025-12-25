@@ -21,7 +21,7 @@ export default function PaymentPage() {
     const seconds = timeLeft % 60;
 
     const handleCopyAccountNumber = () => {
-        navigator.clipboard.writeText('9866915868');
+        navigator.clipboard.writeText('V3SMS25122415415333');
         setCopied(true);
         setTimeout(() => setCopied(false), 2000);
     };
@@ -53,7 +53,7 @@ export default function PaymentPage() {
                             <div className="bg-white border-4 border-gray-100 rounded-2xl p-6 shadow-lg mb-6">
                                 <div className="flex justify-center mb-4">
                                     <img
-                                        src="https://img.vietqr.io/image/VCB-9866915868-compact2.png?amount=899000&addInfo=KHOAHOC%20AI%20KIENTRUC&accountName=TRAN%20VAN%20HOANG"
+                                        src="/ma qr.jpg"
                                         alt="VietQR Code"
                                         className="w-64 h-64 object-contain"
                                     />
@@ -63,11 +63,11 @@ export default function PaymentPage() {
                                 <div className="space-y-3 border-t pt-4">
                                     <div className="flex justify-between items-center">
                                         <span className="text-sm text-gray-600 font-sans">Tên tài khoản</span>
-                                        <span className="text-sm font-bold text-gray-900 font-sans">Tran Van Hoang</span>
+                                        <span className="text-sm font-bold text-gray-900 font-sans">Trần Thị Hiên</span>
                                     </div>
                                     <div className="flex justify-between items-center">
                                         <span className="text-sm text-gray-600 font-sans">Số tài khoản</span>
-                                        <span className="text-sm font-bold text-gray-900 font-sans">9866915868</span>
+                                        <span className="text-sm font-bold text-gray-900 font-sans">V3SMS25122415415333</span>
                                     </div>
                                     <div className="flex justify-between items-center">
                                         <span className="text-sm text-gray-600 font-sans">Số tiền</span>
@@ -81,21 +81,21 @@ export default function PaymentPage() {
                                 <div className="flex justify-between items-center p-4 bg-bg-surface rounded-xl border border-border">
                                     <span className="text-gray-600 font-medium font-sans">Ngân Hàng</span>
                                     <div className="text-right">
-                                        <div className="font-bold text-gray-900 font-heading">Vietcombank</div>
-                                        <div className="text-sm text-gray-600 font-sans">Ngân Hàng Ngoại Thương Việt Nam</div>
+                                        <div className="font-bold text-gray-900 font-heading">BIDV</div>
+                                        <div className="text-sm text-gray-600 font-sans">Ngân hàng TMCP Đầu tư và Phát triển Việt Nam</div>
                                     </div>
                                 </div>
 
                                 <div className="flex justify-between items-center p-4 bg-bg-surface rounded-xl border border-border">
                                     <span className="text-gray-600 font-medium font-sans">Chủ Tài Khoản</span>
-                                    <span className="font-bold text-gray-900 font-sans">TRAN VAN HOANG</span>
+                                    <span className="font-bold text-gray-900 font-sans">TRẦN THỊ HIÊN</span>
                                 </div>
 
                                 <div className="p-4 bg-bg-surface rounded-xl border border-border">
                                     <div className="flex justify-between items-center">
                                         <span className="text-gray-600 font-medium font-sans">Số Tài Khoản</span>
                                         <div className="flex items-center gap-2">
-                                            <span className="font-bold text-primary font-mono text-lg">9866915868</span>
+                                            <span className="font-bold text-primary font-mono text-lg">V3SMS25122415415333</span>
                                             <button
                                                 onClick={handleCopyAccountNumber}
                                                 className="p-2 hover:bg-primary/10 rounded-lg transition-colors"
