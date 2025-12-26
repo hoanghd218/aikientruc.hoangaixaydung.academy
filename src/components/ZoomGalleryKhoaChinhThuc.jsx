@@ -17,11 +17,49 @@ const ZOOM_IMAGES = [
     { id: 10, src: '/zoom/zoom 10.png', alt: 'Kết quả ngay trong zoom' },
     { id: 11, src: '/zoom/zoom 11.png', alt: 'Kết quả ngay trong zoom' },
     { id: 12, src: '/zoom/zoom 12.png', alt: 'Kết quả ngay trong zoom' },
+    { id: 13, src: '/zoom/13.png', alt: 'Kết quả ngay trong zoom' },
     { id: 14, src: '/zoom/zoom 14.png', alt: 'Kết quả ngay trong zoom' },
+
     { id: 17, src: '/zoom/zoom 17.png', alt: 'Kết quả ngay trong zoom' },
     { id: 18, src: '/zoom/zoom 18.png', alt: 'Kết quả ngay trong zoom' },
     { id: 19, src: '/zoom/zoom 19.png', alt: 'Kết quả ngay trong zoom' },
     { id: 20, src: '/zoom/zoom 20.png', alt: 'Kết quả ngay trong zoom' },
+
+    { id: 15, src: '/zoom/1.png', alt: 'Kết quả ngay trong zoom' },
+    { id: 16, src: '/zoom/2.png', alt: 'Kết quả ngay trong zoom' },
+
+
+    { id: 15, src: '/zoom/3.png', alt: 'Kết quả ngay trong zoom' },
+    { id: 16, src: '/zoom/4.png', alt: 'Kết quả ngay trong zoom' },
+
+    { id: 15, src: '/zoom/5.png', alt: 'Kết quả ngay trong zoom' },
+    { id: 16, src: '/zoom/6.png', alt: 'Kết quả ngay trong zoom' },
+
+    { id: 15, src: '/zoom/7.png', alt: 'Kết quả ngay trong zoom' },
+    { id: 16, src: '/zoom/8.png', alt: 'Kết quả ngay trong zoom' },
+
+    { id: 15, src: '/zoom/9.png', alt: 'Kết quả ngay trong zoom' },
+    { id: 16, src: '/zoom/10.png', alt: 'Kết quả ngay trong zoom' },
+
+    { id: 15, src: '/zoom/11.png', alt: 'Kết quả ngay trong zoom' },
+    { id: 16, src: '/zoom/12.png', alt: 'Kết quả ngay trong zoom' },
+
+    { id: 15, src: '/zoom/13.png', alt: 'Kết quả ngay trong zoom' },
+    { id: 16, src: '/zoom/14.png', alt: 'Kết quả ngay trong zoom' },
+
+    { id: 15, src: '/zoom/15.png', alt: 'Kết quả ngay trong zoom' },
+    { id: 16, src: '/zoom/16.png', alt: 'Kết quả ngay trong zoom' },
+
+    { id: 21, src: '/zoom/21.png', alt: 'Kết quả ngay trong zoom' },
+    { id: 22, src: '/zoom/22.png', alt: 'Kết quả ngay trong zoom' },
+    { id: 23, src: '/zoom/23.png', alt: 'Kết quả ngay trong zoom' },
+    { id: 24, src: '/zoom/24.png', alt: 'Kết quả ngay trong zoom' },
+    { id: 25, src: '/zoom/25.png', alt: 'Kết quả ngay trong zoom' },
+    { id: 26, src: '/zoom/26.png', alt: 'Kết quả ngay trong zoom' },
+    { id: 27, src: '/zoom/27.png', alt: 'Kết quả ngay trong zoom' },
+    { id: 28, src: '/zoom/28.png', alt: 'Kết quả ngay trong zoom' },
+    { id: 29, src: '/zoom/29.png', alt: 'Kết quả ngay trong zoom' },
+    { id: 30, src: '/zoom/30.png', alt: 'Kết quả ngay trong zoom' },
 ];
 
 
