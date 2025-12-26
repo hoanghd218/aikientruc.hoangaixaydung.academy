@@ -93,7 +93,7 @@ export default function Pricing() {
                         name: formData.name,
                         email: formData.email,
                         phone: formData.phone,
-                        message: "Tôi muốn nhận 100 mẫu nhà miễn phí"
+                        message: ""
                     })
                 });
             } catch (esaError) {
