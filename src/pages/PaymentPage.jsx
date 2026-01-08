@@ -71,7 +71,7 @@ export default function PaymentPage() {
                                     </div>
                                     <div className="flex justify-between items-center">
                                         <span className="text-sm text-gray-600 font-sans">Số tiền</span>
-                                        <span className="text-lg font-bold text-primary font-sans">899.000 VND</span>
+                                        <span className="text-lg font-bold text-primary font-sans">999.000 VND</span>
                                     </div>
                                 </div>
                             </div>
@@ -113,7 +113,7 @@ export default function PaymentPage() {
 
                                 <div className="flex justify-between items-center p-4 bg-accent/10 rounded-xl border-2 border-accent/30">
                                     <span className="text-gray-900 font-bold font-sans">Số Tiền</span>
-                                    <span className="font-bold text-2xl text-primary font-heading">899.000 VND</span>
+                                    <span className="font-bold text-2xl text-primary font-heading">990.000 VND</span>
                                 </div>
                             </div>
 
