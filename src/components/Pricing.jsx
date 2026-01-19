@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+
 import { Check, Sparkles, Clock, Users, BookOpen, Video, Gift, Smartphone, MapPin, Headphones, Heart, User, Mail, Phone } from 'lucide-react';
 import ReactPixel from 'react-facebook-pixel';
 
 export default function Pricing() {
-    const navigate = useNavigate();
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -107,7 +107,9 @@ export default function Pricing() {
 
 
             // Navigate to payment page on success
-            navigate('/mua-khoa-hoc-ai-kientruc', { state: formData });
+            window.location.href = 'https://kynangdilam.mstacademy.vn/thankyouaikientruc';
+
+
         } catch (error) {
             console.error('Registration error:', error);
             alert('Có lỗi xảy ra khi đăng ký. Vui lòng thử lại!');
