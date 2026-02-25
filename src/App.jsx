@@ -33,6 +33,7 @@ function App() {
       <Route path="/ai-kien-truc-chuyen-sau" element={<HomePage />} />
       <Route path="/mua-khoa-hoc-ai-kientruc" element={<PaymentPageCamOn />} />
       <Route path="/ai-kien-truc-2-buoi-free" element={<FreeCourse2SessionPage />} />
+      <Route path="/free" element={<FreeCourse2SessionPage />} />
       <Route path="/cam-on-dang-ky-khoa-free" element={<ThankYouFreePage />} />
       <Route path="/ai-cho-chu-cua-hang-vat-lieu-gach" element={<MaterialStoreLandingPage />} />
     </Routes>
