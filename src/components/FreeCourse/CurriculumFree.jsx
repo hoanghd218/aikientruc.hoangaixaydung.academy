@@ -66,12 +66,12 @@ function CurriculumTestimonialsFree() {
         },
         {
             id: 3,
-            name: "Lê Minh Cường",
-            initials: "LM",
+            name: "Nguyễn Văn Toàn",
+            initials: "NV",
             avatar: "/hoc vien/le quang cuong.png",
             role: "Quản Lý Dự Án Xây Dựng",
             rating: 5,
-            text: "Em rất ấn tượng với cách anh Tony hướng dẫn chi tiết từng bước. Các template và prompt có sẵn giúp em áp dụng ngay mà không cần phải tìm hiểu quá nhiều. Đây là khóa học thực tiễn nhất mà em từng tham gia!",
+            text: "Nhờ khoá học của anh Tony, em đã tạo được app AI riêng và chốt được đơn ngay sau 1-2 tuần học. Không ngờ AI lại giúp em tăng doanh số nhanh đến vậy!",
             image: "/hoc vien/le quang cuong.png",
             verified: true
         }
@@ -268,8 +268,8 @@ function CurriculumTestimonialsFree() {
                                 key={index}
                                 onClick={() => setCurrentTestimonial(index)}
                                 className={`h-2.5 rounded-full transition-all ${index === currentTestimonial
-                                        ? 'w-8 bg-primary'
-                                        : 'w-2.5 bg-border hover:bg-primary/40'
+                                    ? 'w-8 bg-primary'
+                                    : 'w-2.5 bg-border hover:bg-primary/40'
                                     }`}
                                 aria-label={`Go to testimonial ${index + 1}`}
                             />
@@ -345,7 +345,7 @@ export function CurriculumFree() {
                         {/* Decorative corner */}
                         <div className="absolute -top-4 -left-4 w-12 h-12 border-t-4 border-l-4 border-primary/30 rounded-tl-2xl"></div>
                         <div className="absolute -bottom-4 -right-4 w-12 h-12 border-b-4 border-r-4 border-primary/30 rounded-br-2xl"></div>
-                        
+
                         <div className="relative bg-gradient-to-br from-primary/10 via-bg-surface to-secondary/5 border-2 border-primary/20 rounded-2xl p-8 md:p-10 shadow-lg">
                             <div className="flex items-start gap-4 mb-6">
                                 <div className="flex-shrink-0 p-3 rounded-xl bg-primary/15 text-primary">
@@ -356,8 +356,8 @@ export function CurriculumFree() {
                                         🎯 Bạn có dám bỏ ra 2 ngày cùng tôi Tony Hoang chinh phục AI kiến trúc nội thất không?
                                     </h3>
                                     <p className="text-base md:text-lg text-text-main font-sans leading-relaxed">
-                                        <span className="font-bold text-primary">Trong 2 buổi Zoom này</span>, bạn sẽ <span className="font-bold text-primary">làm được ngay</span> cách 
-                                        <span className="font-semibold"> render ảnh ngoại thất, nội thất</span> chuyên nghiệp, cách <span className="font-semibold">chỉnh sửa ảnh</span> bằng AI dễ dàng, 
+                                        <span className="font-bold text-primary">Trong 2 buổi Zoom này</span>, bạn sẽ <span className="font-bold text-primary">làm được ngay</span> cách
+                                        <span className="font-semibold"> render ảnh ngoại thất, nội thất</span> chuyên nghiệp, cách <span className="font-semibold">chỉnh sửa ảnh</span> bằng AI dễ dàng,
                                         cách <span className="font-semibold">tạo video</span> từ hình ảnh kiến trúc, và thậm chí cách <span className="font-semibold">tạo app AI riêng</span> cho mình.
                                     </p>
                                 </div>
@@ -372,7 +372,7 @@ export function CurriculumFree() {
                                             Bạn sợ tốn thời gian ư?
                                         </h4>
                                         <p className="text-text-main text-sm leading-relaxed">
-                                            Tôi đã chuẩn bị sẵn <span className="font-bold text-accent">toàn bộ prompts mẫu, template mẫu, và APP AI</span> mà 
+                                            Tôi đã chuẩn bị sẵn <span className="font-bold text-accent">toàn bộ prompts mẫu, template mẫu, và APP AI</span> mà
                                             bạn <span className="font-semibold">chỉ việc sử dụng ngay, không hề tốn công sức tìm hiểu</span>!
                                         </p>
                                     </div>
@@ -414,8 +414,8 @@ export function CurriculumFree() {
                     </h3>
                     <div className="grid md:grid-cols-2 gap-6">
                         {modules.map((module, index) => (
-                            <CurriculumModuleFree 
-                                key={index} 
+                            <CurriculumModuleFree
+                                key={index}
                                 module={module.title}
                                 description={module.description}
                                 number={index + 1}
@@ -432,7 +432,7 @@ export function CurriculumFree() {
                             <p className="text-text-main font-sans text-lg mb-4">
                                 <span className="font-bold text-primary">Kiến thức thực chiến</span>, áp dụng được ngay vào công việc 💼
                             </p>
-                            <button 
+                            <button
                                 onClick={() => {
                                     const pricingSection = document.getElementById('pricing');
                                     pricingSection?.scrollIntoView({ behavior: 'smooth', block: 'start' });

@@ -176,6 +176,12 @@ export default function PricingFree() {
                                                 Đặc biệt: <strong className="text-accent">"APP BimSpeed AI Pro"</strong> cho render ảnh video kiến trúc nội thất giúp bạn tạo ra bước nhảy đột phá doanh số 10X
                                             </span>
                                         </li>
+                                        <li className="flex gap-3">
+                                            <Gift className="h-5 w-5 text-accent shrink-0 mt-0.5" />
+                                            <span>
+                                                🎁 Mời cafe <strong className="text-accent">tặng ngay 200.000 credit</strong> để render ảnh — render được khoảng <strong className="text-primary">1.000 ảnh chất lượng cao</strong> với <strong className="text-accent">Nano Banana Pro</strong>
+                                            </span>
+                                        </li>
                                     </ul>
 
 

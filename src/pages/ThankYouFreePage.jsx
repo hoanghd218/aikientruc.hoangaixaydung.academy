@@ -189,6 +189,15 @@ export default function ThankYouFreePage() {
                                                     <span className="text-text-muted text-sm">Công cụ render đột phá giúp X10 hiệu suất.</span>
                                                 </div>
                                             </li>
+                                            <li className="flex gap-4">
+                                                <div className="bg-yellow-500/10 p-2 rounded-lg h-fit shrink-0">
+                                                    <Gift className="h-5 w-5 text-yellow-500" />
+                                                </div>
+                                                <div>
+                                                    <strong className="text-yellow-500 block">🎁 Tặng 200.000 Credit Miễn Phí</strong>
+                                                    <span className="text-text-muted text-sm">Dùng ngay trên APP BimSpeed AI — đủ render ~600 ảnh chất lượng cao.</span>
+                                                </div>
+                                            </li>
                                         </ul>
                                     </div>
 
@@ -273,7 +282,7 @@ export default function ThankYouFreePage() {
                                         </div>
 
                                         <div className="mt-8 text-center space-y-4">
-                                            <button className="text-primary font-bold hover:underline inline-flex items-center gap-2 group" onClick={() => window.open('https://zalo.me/g/ozdngh272', '_blank')}>
+                                            <button className="text-primary font-bold hover:underline inline-flex items-center gap-2 group" onClick={() => window.open('https://zalo.me/g/pmotxf386', '_blank')}>
                                                 <span>Đã chuyển khoản? Xác nhận tại Zalo</span>
                                                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
                                             </button>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Users, Award, ArrowRight } from 'lucide-react';
+import { Users, Award, ArrowRight, Play, ExternalLink } from 'lucide-react';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
 
@@ -32,6 +32,26 @@ const STUDENT_VIDEOS = [
     { id: 'FEwIrFwswxM', title: 'Video học viên 3' },
     { id: 'Gy5YMEPo1vA', title: 'Video học viên 4' },
     { id: '2jvsOtspiNg', title: 'Video học viên 5' },
+];
+
+// Real-world demo videos (Facebook)
+const REAL_WORLD_VIDEOS = [
+    {
+        id: 1,
+        url: 'https://www.facebook.com/share/r/181mojxfE9/',
+        title: 'Video Timelapse',
+        description: 'Xem quá trình tạo render timelapse thực tế bằng AI',
+        icon: '🎬',
+        gradient: 'from-blue-500 to-purple-600',
+    },
+    {
+        id: 2,
+        url: 'https://www.facebook.com/share/v/1DHPMwL7Xg/',
+        title: 'App Phong Thuỷ',
+        description: 'Demo app phong thuỷ được tạo ra bằng AI trong khoá học',
+        icon: '🏠',
+        gradient: 'from-emerald-500 to-teal-600',
+    },
 ];
 
 export function ZoomGalleryFree() {
@@ -88,6 +108,71 @@ export function ZoomGalleryFree() {
                         ))}
                     </div>
                 </PhotoProvider>
+
+                {/* Real-World Video Section */}
+                <div className="text-center mb-10 max-w-4xl mx-auto">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-accent/30 bg-accent/10 mb-6">
+                        <Play className="h-4 w-4 text-accent" />
+                        <span className="text-xs font-bold uppercase tracking-wider text-accent">
+                            Video Thực Tế
+                        </span>
+                    </div>
+                    <h3 className="text-2xl md:text-3xl font-bold font-heading text-text-main mb-4">
+                        Xem video thực tế các sản phẩm AI
+                    </h3>
+                    <p className="text-text-muted text-lg">
+                        Những video demo thực tế từ học viên — bấm vào để xem trên Facebook
+                    </p>
+                </div>
+
+                {/* Real-World Video Cards */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-20">
+                    {REAL_WORLD_VIDEOS.map((video) => (
+                        <a
+                            key={video.id}
+                            href={video.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group relative overflow-hidden rounded-2xl border-2 border-border hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 bg-bg-surface block"
+                        >
+                            {/* Gradient Header */}
+                            <div className={`relative h-48 bg-gradient-to-br ${video.gradient} flex items-center justify-center overflow-hidden`}>
+                                {/* Animated Background Pattern */}
+                                <div className="absolute inset-0 opacity-20">
+                                    <div className="absolute top-4 left-4 w-20 h-20 border-2 border-white/30 rounded-full animate-pulse" />
+                                    <div className="absolute bottom-6 right-6 w-16 h-16 border-2 border-white/20 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }} />
+                                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 border border-white/10 rounded-full" />
+                                </div>
+
+                                {/* Play Button */}
+                                <div className="relative z-10 flex flex-col items-center gap-3">
+                                    <div className="w-20 h-20 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center group-hover:scale-110 group-hover:bg-white/30 transition-all duration-300 shadow-lg">
+                                        <Play className="h-8 w-8 text-white ml-1" fill="white" />
+                                    </div>
+                                    <span className="text-white/80 text-sm font-medium group-hover:text-white transition-colors">
+                                        Bấm để xem trên Facebook
+                                    </span>
+                                </div>
+                            </div>
+
+                            {/* Content */}
+                            <div className="p-6">
+                                <div className="flex items-start gap-4">
+                                    <span className="text-4xl">{video.icon}</span>
+                                    <div className="flex-1 min-w-0">
+                                        <h4 className="text-lg font-bold text-text-main mb-1 group-hover:text-primary transition-colors flex items-center gap-2">
+                                            {video.title}
+                                            <ExternalLink className="h-4 w-4 text-text-muted group-hover:text-primary transition-colors flex-shrink-0" />
+                                        </h4>
+                                        <p className="text-text-muted text-sm leading-relaxed">
+                                            {video.description}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    ))}
+                </div>
 
                 {/* Video Section Header */}
                 <div className="text-center mb-12 max-w-4xl mx-auto">
