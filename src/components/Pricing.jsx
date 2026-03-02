@@ -126,7 +126,7 @@ export default function Pricing() {
         },
         {
             icon: <Smartphone className="h-5 w-5" />,
-            title: "APP Render ảnh, video trọn đời (Giá thường 200k/tháng) - Update liên tục",
+            title: "APP Render ảnh - Update liên tục",
             highlight: true,
             badge: "Chỉ hôm nay",
             value: "2.400.000đ"
